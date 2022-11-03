@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+
+}
+/* Header Css  */
+
+.header-area{
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    
+}
+
+/* Page Title css  */
+
+.header-area .page-title{
+    width: 400px;
+    height: 40px;
+    float: left;
+    overflow: hidden;
+    
+}
+.header-area .page-title .siteTitle{
+    text-align: left;
+    margin-left: 20px;
+}
+  
+/* Page Title css end */
+
+/* Header menubar css  */
+.header-area .menuBar{
+    float: right;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    
+    
+}
+
+.header-area .menuBar .navBar{
+    width: 100%;
+    height: 50px;
+   
+}
+
+.header-area .menuBar .navBar .menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    
+    
+}
+.header-area .menuBar .navBar .menu .menu_li{
+    list-style: none;
+    padding: 10px 10px;
+    text-align: center;
+    position: relative;
+    
+
+}
+.header-area .menuBar .navBar .menu .menu_li::before{
+    position: absolute;
+    content: "";
+    top:35px ;
+    left: 50%;
+    
+    background-color: rgb(255, 255, 255);
+    opacity: 3;  
+}
+
+.header-area .menuBar .navBar .menu .menu_li:hover::before{
+    transform: scaleX(20);
+    transition: 0.5s;
+    width: 5px;
+    height: 2px;
+}
+
+
+.header-area .menuBar .navBar .menu .menu_li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:600;
+}
+
+/* menu_li hover effect */
+
+.header-area .menuBar .navBar .menu .menu_li .subMenu{
+    opacity: 0;
+    margin-top: 10px;
+    background-color: rgb(33,37,41);
+    transition: all .4s;
+    text-align: center;
+    padding-left:0;
+    transform: translateY(-80px);
+}
+
+.header-area .menuBar .navBar .menu .menu_li .subMenu li{
+    position: relative;
+    margin: 3px 0;
+    
+    list-style: none;
+    
+}
+.header-area .menuBar .navBar .menu .menu_li .subMenu li::before{
+    position: absolute;
+    content: "";
+    top:25px ;
+    left: 50%;
+    width: 3px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.header-area .menuBar .navBar .menu .menu_li .subMenu li:hover::before{
+    transform: scaleX(32);
+    transition: 0.8s;
+    opacity: 3;
+}
+.header-area .menuBar .navBar .menu .menu_li .subMenu li a{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    
+}
+
+.header-area .menuBar .navBar .menu .menu_li:hover .subMenu{
+   opacity: 3;
+   transform: translateY(0);
+    
+}
+
+/* Header CSS Ended  */
+
+
+
+
+
+
+
+
+
+
+
+/* UI Interface CSS  */
+.interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+    background: url(Source/img/interfce-bg\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.interface .main-area{
+    width: 600px;
+    height: 450px;
+    color: #fff;
+    margin-left: 15%;
+}
+
+
+
+/* Footer CSS  */
+
+.footer{
+    border-top: 4px solid #fff;
+    height: 400px;
+    transition: all 1s;
+}
+
+
+
+
+/* column one css  */
+.footer .col{
+    border-right: 0.1px solid #fff;
+}
+
+.footer .title{
+    padding-left: 20%;
+    font-weight: 600;
+    padding-top: 10%;
+    color: #fff;
+}
+.footer .subTitle{
+    letter-spacing: 5px;
+    color: #fff;
+    padding-left: 20%;
+    font-weight: 200;
+}
+
+.footer .paragrap{
+    padding-left: 20%;
+    font-weight: 600;
+    padding-top: 5%;
+    color: #fff;
+}
+.footer .titleTwo{
+    padding-left: 20%;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.footer .icon{
+    padding-left: 20%;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    transition: all 1s;
+}
+
+.footer .icon i{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    
+}
+.footer .icon i:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+    transform: scale(1.1);
+    transition: .5s;
+    
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 108, 248);
+}
+
+
+
+
+
+
+/* column two css  */
+
+.footer details{
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20%;
+    transition: all 1s;
+    height: auto;
+    max-height: 90px;
+    overflow-y: auto;
+    
+}
+
+
+
+
+
+/* Column three CSS  */
+
+.footer h6{
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 20%;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+
+
+/* column Four css  */
+.footer .contact-icon{
+    padding-left: 20%;
+    margin-top: 20px;
+    color: #fff;
+    
+    transition: all 1s;
+}
+
+.footer .contact-icon i{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.footer .contact-icon span{
+    margin-left: 10px;
+}
+
+.footer .contact-icon .input{
+    margin-top: 20px;
+    height:40px;
+}
+.footer .contact-icon .send-btn{
+    background-color: rgb(0, 58, 248);
+    border-radius: 5px;
+    padding: 10px 3px;
+    margin-left: 3px;
+}
+
+
+/* Copyright CSS  */
+.footer .Copyright{
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.interface .main-area .minTitle{
+    animation: 1s ease-out 0s  minTitle;
+}
+@keyframes minTitle{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(-10px);
+        opacity: 3;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 3;
+    }
+}
+
+.interface .main-area .title{
+    animation: 1.5s ease-out 0s  title;
+}
+@keyframes title{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+   
+    100%{
+        transform: translateX(0px);
+        opacity: 3;
+    }
+}

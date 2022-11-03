@@ -1,0 +1,225 @@
+<div class="container">
+           
+            <h2 class="title">Awesome Slider</h2>
+            <div class="slider" id="slider">
+                <!-- Slider One -->
+                <div id="slider1">
+                    <h1 class="name">আপনি কি জানেন?</h1>
+                    <h4 class="info">যে সকল লোকেদের ঠাট্টা বুঝার ক্ষমতা বেশি হয় অর্থাৎ যাদের Sense of Human বাকি লোকেদের থেকে বেশি হয় সেই সকল লোকেরা অন্যের মনের কথা খুব সহজেই বুঝতে পারে অর্থাৎ এই সকল লোকেদের Mind Reading Power অন্যের তুলনায় বেশি হয়।</h4>
+                    <button>See Explanation</button>
+                </div>
+                <!-- Slider for Md Arshadul Islam -->
+                <div id="slider2">
+                    <h1 class="name">আপনি কি জানেন?</h1>
+                    <h4 class="info">যে সকল লোকেদের ঠাট্টা বুঝার ক্ষমতা বেশি হয় অর্থাৎ যাদের সেন্স অফ হিউম্যান বাকি লোকেদের থেকে বেশি হয় সেই সকল লোকেরা অন্যের মনের কথা খুব সহজেই বুঝতে পারে অর্থাৎ এই সকল লোকেদের মাইন্ড রিডিং পাওয়ার অন্যের তুলনায় বেশি হয়।</h4>
+                    <button>See Explanation</button>
+                </div>
+                <!-- Slider for MD Noor Nobi Fahim -->
+                <div id="slider3">
+                    <h1 class="name">আপনি কি জানেন?</h1>
+                    <h4 class="info">যে সকল লোকেদের ঠাট্টা বুঝার ক্ষমতা বেশি হয় অর্থাৎ যাদের সেন্স অফ হিউম্যান বাকি লোকেদের থেকে বেশি হয় সেই সকল লোকেরা অন্যের মনের কথা খুব সহজেই বুঝতে পারে অর্থাৎ এই সকল লোকেদের মাইন্ড রিডিং পাওয়ার অন্যের তুলনায় বেশি হয়।</h4>
+                    <button>See Explanation</button>
+                </div>
+            </div>
+            
+            <span id="dot1" class="active" ></span>
+            <span id="dot2"></span>
+            <span id="dot3"></span>
+            
+        </div>
+
+
+
+
+
+
+
+
+        
+.container{
+    width: 100%;
+    height: 900px;
+    
+}
+.container .title{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+/* Slider Effect */
+.container .slider{
+    height: 400px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transition: 1s;
+    display: flex;
+    
+}
+
+/* Slider One Css */
+.container .slider #slider1{
+    background: url(Source/img/slider-bg.jpg);
+    background-size: cover;
+    
+    position: relative;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.container .slider #slider1:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+/* For Slider Bangali Font  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap');
+
+.container .slider #slider1 .name,
+.container .slider #slider1 .info{
+    font-family: 'Noto Serif Bengali', serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:20px 10px ;
+}
+.container .slider #slider1 button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35, 31, 238);
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    
+}
+.container .slider #slider1 button:hover{
+    background-color:rgb(35, 35, 163) ;
+}
+
+
+
+
+
+
+/* slider two css */
+
+.container .slider #slider2{
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    opacity: 0;
+    display: none;
+    transition: 1s;
+}
+
+
+
+.container .slider #slider2 .name,
+.container .slider #slider2 .info{
+    font-family: 'Noto Serif Bengali', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.container .slider #slider2 button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35, 31, 238);
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    
+}
+.container .slider #slider2 button:hover{
+    background-color:rgb(35, 35, 163) ;
+}
+
+/* slider three css */
+
+
+
+
+
+.container .slider #slider3{
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    opacity: 0;
+    display: none;
+    transition: 1s;
+}
+
+.container .slider #slider3 .name,
+.container .slider #slider3 .info{
+    font-family: 'Noto Serif Bengali', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
+.container .slider #slider3 button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(35, 31, 238);
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    
+}
+.container .slider #slider3 button:hover{
+    background-color:rgb(35, 35, 163) ;
+}
+
+/* Control Bar CSS */
+
+.container #dot1{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(6, 22, 255);
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+.container .active{
+    transform: scaleX(3.5);
+}
+
+
+.container #dot2{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(6, 22, 255);
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container #dot3{
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(6, 22, 255);
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
