@@ -3,12 +3,8 @@
 }
 @keyframes minTitle{
     0%{
-        transform: translateY(-100px);
+        transform: translateY(-200px);
         opacity: 0;
-    }
-    40%{
-        transform: translateY(-10px);
-        opacity: 3;
     }
     100%{
         transform: translateY(0px);
@@ -21,10 +17,25 @@
 }
 @keyframes title{
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-200px);
         opacity: 0;
     }
    
+    100%{
+        transform: translateX(0px);
+        opacity: 3;
+    }
+}
+
+.main-area p{
+    animation:  1.5s ease-out para;
+}
+
+@keyframes para{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
     100%{
         transform: translateX(0px);
         opacity: 3;
