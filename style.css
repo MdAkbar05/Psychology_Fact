@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(199, 199, 199);
     font-family: 'Oswald', sans-serif;
 
 }
+.main-body{
+    background-color: rgb(235, 232, 232);
+}
+
 /* Header Css  */
 
 .header-area{
@@ -14,7 +17,7 @@ body{
     width: 100%;
     height: 50px;
     position: fixed;
-    
+    border-bottom: 0.5px solid black;
 }
 
 /* Page Title css  */
@@ -85,7 +88,7 @@ body{
 
 .header-area .menuBar .navBar .menu .menu_li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #000000;
     font-size: 20px;
     font-weight:600;
 }
@@ -95,11 +98,14 @@ body{
 .header-area .menuBar .navBar .menu .menu_li .subMenu{
     opacity: 0;
     margin-top: 10px;
-    background-color: rgb(33,37,41);
+    background-color: rgb(0, 0, 0);
     transition: all .4s;
     text-align: center;
     padding-left:0;
     transform: translateY(-80px);
+    width: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .header-area .menuBar .navBar .menu .menu_li .subMenu li{
@@ -127,7 +133,7 @@ body{
     background-color: rgb(255, 197, 38);;
 }
 .header-area .menuBar .navBar .menu .menu_li .subMenu li a{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 253, 253);
     font-weight: 400;
     
 }
@@ -237,6 +243,7 @@ body{
     width: 100%;
     padding: 30px;
     margin-top: 40px;
+    
 }
 
 
@@ -244,21 +251,26 @@ body{
 /* blog Css */
 
 .section2 .blogArea{
+    position: relative;
     padding:0 5px;
+    
 
 }
 
 .section2 .blogArea .blog{
     margin-top: 20px;
     padding: 5px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    height: 300px;
+    
 }
 .section2 .blogArea .blog:hover{
     transition: 0.5s all;
-    box-shadow: 3px 14px 50px -14px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 3px 14px 50px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 14px 50px -14px rgba(0,0,0,0.75);
+    box-shadow: 3px 14px 30px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 14px 30px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 14px 30px -14px rgba(0,0,0,0.75);
+    background-color: rgb(237, 249, 252);
 }
 
 .section2 .blogArea .blog .blog-img{
@@ -276,12 +288,13 @@ body{
     height: 100%;
     width: 60%;
     border-radius: 50%;
-    
+    padding: 20px 0;
 }
 
 
 .section2 .blogArea .blog .blog-details{
     position: relative;
+    padding: 20px 0;
 }
 
 .section2 .blogArea .blog .blog-details .blogTitle{
@@ -306,14 +319,53 @@ body{
     margin-top: 5px;
 }
 
-.section2 .blogArea .blog .blog-details .details .btn-primary{
+.section2 .blogArea .blog .blog-details .details .btn-outline-success{
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.section2 .blogArea .blog .blog-details .details .btn-success{
+
+.section2 .blogArea .blog .blog-details .details .btn-outline-dark{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.section2 .blogArea .blog .blog-details .details .btn-outline-primary{
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 18px;
 }
+
+
+.section2 .blogArea .col-sm-2{
+    margin-top: 20px;
+    padding-right: 0;
+
+}
+.section2 .blogArea .col-sm-2 .input-area{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 .blogArea .col-sm-2 .input-area input{
+    height: 30px;
+    width: 100%;
+}
+
+
+
+
+/* left blog css effect  */
+
+
+
+
+
+
+
 
 /* Footer CSS  */
 
