@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 1200px) {
+    .section2 .blogArea .blog{
+        height: 350px;
+    }
+    .section2 .blogArea .blog .blog-img img{
+        width: 80%;
+        height: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 900px){
+    .header-area .menuBar{
+        float: right;
+        position: relative;
+        width: 50px;
+        height: 600px;
+        
+        
+    }
+    .header-area .menuBar .navBar{
+        width: 50px;
+        height: 500px;
+    }
+    .header-area .menuBar .navBar .menu{
+        display: none;
+        width: 50px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-800px);
+    }
+  
+    .header-area .menuBar .navBar .dropdown{
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+
+  }

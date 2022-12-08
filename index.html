@@ -8,6 +8,7 @@
     <!-- StyleSheet Link  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="Responsive_max900px.css">
     <!-- Favicon Link  -->
     <link rel="shortcut icon" href="Source/PNG/Asset 2.png" type="image/x-icon">
     <!-- Bootstrap 5 cdn Link  -->
@@ -24,6 +25,16 @@
             </div>
             <div class="menuBar">
                 <nav class="navBar">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                      </div>
                     <ul class="menu  text-dark">
                         <li class="menu_li active">
                             <a id="home" href="section1">Home</a>
@@ -45,7 +56,7 @@
                             </ul>
                        </li>
                        <li class="menu_li">
-                            <a id="brain" href="#">Brain</a>
+                            <a id="brain" href="#">Brains</a>
                             <ul class="subMenu">
                                 <li><a href="#">Electricity</a></li>
                                 <li><a href="#">PlayStation</a></li>
@@ -106,6 +117,10 @@
         </div>
     </div>
     <div class="container section2">
+        <div class="blog-title">
+            <div class="spinner-grow text-primary"></div>----Latest Amaizing Facts----<div class="spinner-grow text-danger"></div>
+            
+        </div>
         <div class="blogArea row">
             <div class="col-sm-10">
                 <div class="blog row">
@@ -121,7 +136,8 @@
                         <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
                     </div>
                     <div class="details">
-                        <div class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum repudiandae et maxime laudantium officia aut animi sunt ipsa aliquid impedit tempore soluta provident dolorem, modi recusandae fugit ex dignissimos quae. Similique, nesciunt quas! Cum quibusdam delectus suscipit nisi repellendus fuga iure porro corrupti? Suscipit nemo blanditiis cumque nobis cum?</div>
+                        <div class="short">LLorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum repudiandae et maxime laudantium officia aut animi sunt ipsa aliquid impedit tempore soluta provident dolorem, modi recusandae fugit ex dignissimos quae. Similique, nesciunt quas! Cum quibusdam delectus suscipit nisi repellendus fuga iure porro corrupti? Suscipit nemo blanditiis cumque nobis cum? 
+                        </div>
                         <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
                         <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
                         <div class="btn btn-outline-primary">Read More</div>
@@ -200,6 +216,13 @@
                     <li>Meditation Facts</li>
                     <li>Exercise Facts</li>
                 </ul>
+
+                <form action="form" class="iq">
+                    <input type="text" placeholder="Enter Your Intelligence Age"><br>
+                    <div>--------------------------------------* 100</div>
+                    <input type="text" placeholder="Enter Your Actual Age"><br> <br>
+                    <button>Test IQ</button>
+                </form>
             </div>
         </div>
     </div>
