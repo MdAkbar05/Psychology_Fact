@@ -1,4 +1,5 @@
 
+
 @media only screen and (max-width: 1200px) {
     .section2 .blogArea .blog{
         height: 350px;
@@ -11,32 +12,15 @@
 
   /* For Tab Screen Responsive design  */
 
-  @media only screen and (max-width: 900px){
+  @media only screen and (min-width: 1340px){
     .header-area .menuBar{
-        float: right;
-        position: relative;
-        width: 50px;
-        height: 600px;
-        
-        
-    }
-    .header-area .menuBar .navBar{
-        width: 50px;
-        height: 500px;
-    }
-    .header-area .menuBar .navBar .menu{
         display: none;
-        width: 50px;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        transform: translateY(-800px);
+        
     }
-  
-    .header-area .menuBar .navBar .dropdown{
+ 
+ 
+    .header-area.dropdown{
         display: block;
-        float: right;
-        margin-right: 20px;
     }
     .interface{
         
@@ -59,6 +43,7 @@
   /* For Mobile Responsive Design  */
 
   @media only screen and (max-width: 340px) {
+   
     .interface{
         height: 200px;
     }
