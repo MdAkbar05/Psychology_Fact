@@ -8,23 +8,38 @@
     <!-- StyleSheet Link  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
-    <!-- <link rel="stylesheet" href="Responsive_max900px.css"> -->
+
+
     <!-- Favicon Link  -->
     <link rel="shortcut icon" href="Source/PNG/Asset 2.png" type="image/x-icon">
+
     <!-- Bootstrap 5 cdn Link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Font-Awesome CDN  -->
   <script src="https://kit.fontawesome.com/15375f512b.js" crossorigin="anonymous"></script>
  
+  <!-- animation CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 <body class="main-body">
     <header class="header-area container-fluid text-white bg-light">
-            <div class="page-title">
-               <h2 class="siteTitle text-dark" id="h2">PSYCHOLOGY.COM</h2>
-            </div>
-            <div class="searchBar">
-                <input type="text"> <i class="fa-solid fa-magnifying-glass text-dark"></i>
+        <!-- Top Bar  -->
+            <div class="topBar">
+                <div class="img_logo">
+                    <img src="Source/img/psychology_logo.png" alt="logo"><br>
+                </div>
+                <div class="page-title">
+                   <h2 class="siteTitle text-dark" id="h2">PSYCHOLOGY.COM</h2>
+                </div>
+                
+                <div class="searchBar">
+                    <input type="text"> <i class="fa-solid fa-magnifying-glass text-dark "></i>
+                </div>
+                <div class="loginBtn">
+                    <a class="login btn btn-outline-success" href="loginHome.php">Login <i class="fa-solid fa-right-to-bracket"></i></a><span style="margin: auto;">or</span>
+                <a class="login btn btn-outline-success" href="loginHome.php">Register <i class="fa-solid fa-user-plus"></i></a>
+                </div>
             </div>
             <div class="menuBar">
                 <nav class="navBar">
@@ -33,7 +48,7 @@
                             <a id="home" href="#interface">Home</a>
                         </li>
                        <li class="menu_li">
-                            <a id="science" href="#">Sciences</>
+                            <a id="science" href="#catagory">Catagory</>
                             <ul class="subMenu">
                                 <li><a href="#">Electricity</a></li>
                                 <li><a href="#">PlayStation</a></li>
@@ -41,7 +56,7 @@
                             </ul>
                        </li>
                        <li class="menu_li">
-                            <a id="content" href="#">Contents</a>
+                            <a id="content" href="#">Sciences</a>
                             <ul class="subMenu">
                                 <li><a href="#">Fun-Fact</a></li>
                                 <li><a href="#">Image Fact</a></li>
@@ -64,12 +79,19 @@
                                 <li><a href="#">Telescope</a></li>
                             </ul>
                        </li>
-                       <a class="login" href="loginHome.php">Login <i class="fa-solid fa-right-to-bracket"></i></a><span style="margin: auto;">or</span>
-                       <a class="login" href="loginHome.php">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                       <div class="social_link">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                       
                     </ul>
                    
+                   
                 </nav>
+                
             </div>
+            
             <div class="dropdown">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                     <i class="fa-solid fa-bars"></i>
@@ -88,11 +110,80 @@
     <div class="container-fluid interface" id="interface">
         <div class="main-area">
             <h5 class="minTitle text-warning">SAMARTIAN SOCIETY</h5>
-            <h1 class="title">Welcome to Psychology Services</h1>
+            <h1 class="title">Welcome to Psychology Knowledge</h1>
             <p>At the good samaritan society,you arn't just a customer.We believe you'ar someone who deserves to be trated with respect,dignity</p>
             <buttton class="btn btn-outline-warning rounded-pill">Contact US</buttton>
         </div>
     </div>
+    <!-- Main Interface End  -->
+
+
+    <!-- Tpye OF Psychology -->
+    <div class="container psychologyType" id="catagory">
+        <div class="typeTitle">Different type of Psychology</div>
+        <hr>
+        <div class="heading">
+            <img src="Source/img/psychology_type/main_theme.jpg " alt="theme">
+            <h2>The different types of psychology!</h2>
+            <br><span>By Cooper Nelson</span>
+        </div>
+        <div class="row typeArea">
+            <div class="col typeOne">
+                <img src="Source/img/psychology_type/abnormalType.png" alt="abnormal" style="width: 410px; height: 200px;">
+                <h2 class="title">Abnormal Psychology</h2>
+                <p>Abnormal psychology specializes in the study of behavioral deviations. These include atypical behaviors, emotions and thoughts. Abnormal psychology researchers seek to understand why these deviations occur and how best to treat them.
+
+                    Psychologists focus on such aspects of life as:
+                    
+                    <li>Societal interactions</li>
+                    <li>Role expectations</li>
+                    <li>Interpersonal relationships</li>
+                    <span class="btn btn-primary">See More</span>
+                    <p hidden>Abnormal behavior can seem like a subjective term, but clinical psychologists in this field use some general markers to identify it. If the behavior causes distress to a person or those around them, and if it interferes with their ability to participate in their normal life, then it might be considered abnormal.
+                    
+                        This area of psychology focuses on differentiating between maladaptive and adaptive behaviors. This is the difference between behaviors that are beneficial in the short term versus those that are in fact beneficial in the long term. Some of the disorders studied in this field are:
+                        
+                        Anxiety disorders
+                        Depressive disorders
+                        Eating disorders
+                        Personality disorders</p></p>
+            </div>
+            <div class="col typeOne">
+                <img src="Source/img/psychology_type/behavior.png" alt="abnormal" style="width: 410px; height: 200px;">
+                <h2 class="title">Behavioral Psychology</h2>
+                <p>Behavioral psychology focuses on studying observable behaviors. Behavioral psychology researchers seek to understand why certain behaviors occur and how best to change them. The main focus of behavioral psychologists is to find ways to change problematic behaviors through:
+                    <li>Observation</li>
+                    <li>Experimentation</li>
+                    <li>Analysis</li>
+                    <span class="btn btn-primary">See More</span>
+                    <p hidden>Behavioral psychologists work in a variety of settings, such as: 
+                        <li>Hospitals</li>
+                        <li>Universities</li>
+                        <li>Private practices</li>
+                        <li>Government agencies</li>
+                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p></p>
+            </div>
+            <div class="col typeOne">
+                <img src="Source/img/psychology_type/socialMedia.png" alt="abnormal" style="width: 410px; height: 200px;">
+                <h2 class="title">Social psychology</h2>
+                <p>Social psychology studies how people interact with each other and how they behave in groups. It focuses on the factors that influence social behavior, such as:
+                    <li>Attitudes</li>
+                    <li>Beliefs</li>
+                    <li>Emotions</li>
+                    <li>Evaluations</li>
+                    <li>Interpersonal relationships</li>
+                    <span class="btn btn-primary">See More</span>
+                    <p hidden>Social psychologists seek to understand and explain how people's thoughts, feelings and actions are impacted by the actual, mental or imagined presence of others. Social psychologists work in many different settings, such as:
+                        <li>Academic institutions</li>
+                        <li>Businesses</li>
+                        <li>Government agencies</li>
+                        <li>Nonprofit organizations</li>
+                        Social psychologists typically need a doctoral degree and a state licensing credential to work in this field, particularly when their duties intersect with clinical psychology. However, according to the U.S. Bureau of Labor Statistics (BLS), jobs in social work generally require a bachelor’s or master's degree.</p></p>
+            </div>
+        </div>
+    </div>
+<!-- Tpye OF Psychology End -->
+
     <div class="container section2">
         <div class="blogArea row">
             <div class="col-sm-10">
@@ -388,6 +479,7 @@
         <p class="bg-dark text-light Copyright">Copyright © 2022 Mattter-of-Programming BD | All right reserved </p>
     </footer>
     <script src="main.js"></script>
+    <script defer src="scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"></script>
 </body>
 </html>

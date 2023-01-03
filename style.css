@@ -9,7 +9,7 @@
 
 
 .main-body{
-    background: rgb(156, 156, 156);
+    background: whitesmoke;
     width: fit-content;
     
 }
@@ -18,7 +18,7 @@
 :root{
     --key-color:black;
     --body-bg:rgb(156, 156, 156);
-    --content-bg: rgb(196, 194, 194);
+    --content-bg: rgb(255, 255, 255);
     --outer-shadaw:-5px -5px 20px rgb(255, 255, 255),
                      5px 5px 20px rgb(85, 84, 84);
     --inner-shadaw:inset 2px 2px 10px #6d6d6d,
@@ -54,24 +54,43 @@
 .header-area{
     z-index: 1000;
     width: 100%;
-    height: 50px;
+    height: 130px;
     position: fixed;
     border-bottom: 0.5px solid black;
+
+}
+.header-area .topBar{
+    width: 100%;
+    height: 80px;
+    border-bottom: .5px solid rgb(165, 164, 164);
+}
+.header-area .img_logo{
+    width: 100px;
+   
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+.header-area .img_logo img{
+    width:85px;
+    margin-left: 5px;
+    height: 75%;
 }
 
 /* Page Title css  */
 
 .header-area .page-title{
     width: 260px;
-    height: 40px;
+    height: 60px;
     float: left;
     overflow: hidden;
+    
     
 }
 .header-area .page-title .siteTitle{
     text-align: left;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
     
 }
   
@@ -85,28 +104,34 @@
 }
 
 .header-area .searchBar input{
-    width: 250px;
-    height: 30px;
+    width: 40%;
+    min-width: 50px;
+    margin-top: 5px;
+    margin-left: 100px;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 
 .header-area .searchBar i{
-    font-size: 25px;
-    margin:0 5px 5px 0;
-}
-.header-area .searchBar i:hover{
-    font-weight: 800;
+  
+   margin-left: 10px;
+    font-size: 28px;
+    
 }
 
 
 /* Header menubar css  */
 .header-area .menuBar{
-    float: right;
+    margin-left: 35%;
     position: relative;
     width: 780px;
     height: 50px;
-    right: 50px;
+    right: 5px;
     display: block;
 }
 
@@ -123,30 +148,33 @@
 }
 
 .header-area .menuBar .navBar .menu{
-    width: 100%;
+    width: 155%;
     height: 50px;
     display: flex;
     
     
 }
 /* Login Css  */
-.header-area .menuBar .navBar .menu .login{
+.header-area .topBar .loginBtn{
+    width: 200px;
+    float: right;
+    display: flex;
+    height: 38px;
+    margin-top: 15px;
+    
+}
+.header-area .topBar  .login{
     text-decoration: none;
-    color: #005c31;
     font-size: 20px;
     letter-spacing: 1px;
     padding: 2px;
     font-weight:600;
-    margin: auto;
+    
+   
     border-radius: 7px;
     
 }
 
-.header-area .menuBar .navBar .menu .login:hover{
-    border: 1px solid rgb(25, 0, 117);
-    color:var(--key-color);
-    border: 0.5px solid blue;
-}
 
 /* Login Css end  */
 .header-area .menuBar .navBar .menu .menu_li{
@@ -192,14 +220,16 @@
 .header-area .menuBar .navBar .menu .menu_li .subMenu{
     opacity: 0;
     margin-top: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transition: all .4s;
     text-align: center;
+    padding: 10px;
     padding-left:0;
     transform: translateY(-80px);
     width: 100px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
+-webkit-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
+-moz-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 }
 
 .header-area .menuBar .navBar .menu .menu_li .subMenu li{
@@ -227,7 +257,7 @@
     background-color: rgb(255, 197, 38);;
 }
 .header-area .menuBar .navBar .menu .menu_li .subMenu li a{
-    color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
     font-weight: 400;
     
 }
@@ -236,6 +266,23 @@
    opacity: 3;
    transform: translateY(0);
     
+}
+
+
+/* social media nav  */
+
+.header-area .menuBar .navBar .menu .social_link{
+    margin-left: 360px;
+    margin-top: 8px;
+
+}
+.header-area .menuBar .navBar .menu .social_link i{
+    font-size: 25px;
+    padding: 0 7px;
+    cursor: pointer;
+}
+.header-area .menuBar .navBar .menu .social_link i:hover{
+    color: rgb(24, 67, 255);
 }
 
 /* Header CSS Ended  */
@@ -277,6 +324,85 @@
 
 /* control left rigth  */
 
+
+
+/* .psychologyType css  */
+
+
+.psychologyType{
+    margin: auto;
+    padding: 20px;
+    position: relative;
+
+}
+.psychologyType .typeTitle{
+    font-size: 35px;
+    color: var(--key-color);
+    text-align: center;
+    text-shadow: 0px 5px 20px rgb(255, 255, 255);
+}
+
+.psychologyType .heading{
+    width: 100%;
+    position: relative;
+    
+    justify-content: left;
+}
+.psychologyType .heading img{
+   width: 50%;
+   height: 60%;
+   margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadaw);
+    transition: .5s all;
+}
+.psychologyType .heading img:hover{
+    transform: scale(1.05);
+}
+.psychologyType .heading h2{
+    position: absolute;
+    right: 100px;
+    top: 160px;
+    color: var(--key-color);
+    text-shadow: 0px 5px 20px rgb(255, 255, 255);
+}
+.psychologyType .heading span{
+    position: absolute;
+    color: coral;
+    right: 100px;
+    top: 200px;
+    text-shadow: 0px 5px 20px rgb(255, 255, 255);
+}
+
+.psychologyType .typeArea{
+    margin-top: 40px;
+    border-top: 0.2px solid;
+}
+.psychologyType .typeArea .col:hover{
+    transform: scale(1.005);
+    box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
+-webkit-box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
+-moz-box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
+}
+
+.psychologyType .typeArea .col{
+    border: 0.001px solid;
+    transition: 0.5s all;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.psychologyType .typeArea .col .title{
+    text-align: center;
+}
+.psychologyType .typeArea .col span{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.psychologyType .typeArea .col p .hide{
+    display: none;
+}
 
 
 
@@ -346,10 +472,10 @@
     height: 400px;
     position: absolute;
     z-index: 1;
-    transform: translateY(450px);
+    transform: scale(0);
    }
 .section1 .col:hover .Consciousness{
-    transform: translateY(0px);
+    transform: scale(1);
     opacity: .4;
     border: 1px solid red;
 }
@@ -365,10 +491,10 @@
     height: 400px;
     position: absolute;
     z-index: 1;
-    transform: translateY(450px);
+    transform: scale(0);
    }
 .section1 .col:hover .Personality{
-    transform: translateY(0px);
+    transform: scale(1);
     opacity: .4;
     border: 1px solid red;
 }
@@ -384,10 +510,10 @@
     height: 400px;
     position: absolute;
     z-index: 1;
-    transform: translateY(450px);
+    transform: scale(0);
    }
 .section1 .col:hover .Psychology{
-    transform: translateY(0px);
+    transform: scale(1);
     opacity: .4;
     border: 1px solid red;
 }
@@ -456,7 +582,7 @@
     overflow: hidden;
     margin-top: 20px;
     padding: 5px;
-    background-color: rgb(196, 194, 194);
+    background-color: var(--content-bg);
     box-shadow: -5px -5px 20px rgb(255, 255, 255),
                 5px 5px 20px rgb(85, 84, 84);
     border-radius: 10px;
