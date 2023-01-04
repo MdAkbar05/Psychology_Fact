@@ -22,22 +22,22 @@
   <!-- animation CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
-<body class="main-body">
-    <header class="header-area container-fluid text-white bg-light">
+<body class="main-body" id="main-body">
+    <header class="header-area container-fluid text-white " id="header">
         <!-- Top Bar  -->
             <div class="topBar">
                 <div class="img_logo">
                     <img src="Source/img/psychology_logo.png" alt="logo"><br>
                 </div>
                 <div class="page-title">
-                   <h2 class="siteTitle text-dark" id="h2">PSYCHOLOGY.COM</h2>
+                   <h2 class="siteTitle " id="h2">PSYCHOLOGY.COM</h2>
                 </div>
                 
                 <div class="searchBar">
                     <input type="text"> <i class="fa-solid fa-magnifying-glass text-dark "></i>
                 </div>
                 <div class="loginBtn">
-                    <a class="login btn btn-outline-success" href="loginHome.php">Login <i class="fa-solid fa-right-to-bracket"></i></a><span style="margin: auto;">or</span>
+                    <a class="login btn btn-outline-success" href="loginHome.php">Login <i class="fa-solid fa-right-to-bracket"></i></a>|
                 <a class="login btn btn-outline-success" href="loginHome.php">Register <i class="fa-solid fa-user-plus"></i></a>
                 </div>
             </div>
@@ -79,10 +79,25 @@
                                 <li><a href="#">Telescope</a></li>
                             </ul>
                        </li>
+                       <!-- Social media Navbar  -->
                        <div class="social_link">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="colorSwitcher" id="colorSwitcher">
+                        <div class="colorSwitcherBtn" id="colorBtn">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h4>Select Color</h4>
+                        <div class="theme-btn-container">
+                            <span class="themeBtns" data-color="#990d00" style="background-color: #990d00;"></span>
+                            <span class="themeBtns" data-color="#00e0d5" style="background-color: #00e0d5;"></span>
+                            <span class="themeBtns" data-color="#b000b6" style="background-color: #b000b6;"></span>
+                            <span class="themeBtns" data-color="#00115f" style="background-color: #00115f;"></span>
+                            <span class="themeBtns" data-color="#1d1616" style="background-color: #1d1616;"></span>
+                            <span class="themeBtns" data-color="#ffd209" style="background-color: #ffd209;"></span>
+                        </div>
                     </div>
                        
                     </ul>
@@ -126,10 +141,10 @@
             <img src="Source/img/psychology_type/main_theme.jpg " alt="theme">
             <h2>The different types of psychology!</h2>
             <br><span>By Cooper Nelson</span>
-        </div>
+        </div><hr>
         <div class="row typeArea">
-            <div class="col typeOne">
-                <img src="Source/img/psychology_type/abnormalType.png" alt="abnormal" style="width: 410px; height: 200px;">
+            <div class="col-12 typeOne">
+                <img src="Source/img/psychology_type/abnormalType.png" alt="abnormal" style="width: 100%; height: auto;">
                 <h2 class="title">Abnormal Psychology</h2>
                 <p>Abnormal psychology specializes in the study of behavioral deviations. These include atypical behaviors, emotions and thoughts. Abnormal psychology researchers seek to understand why these deviations occur and how best to treat them.
 
@@ -138,33 +153,31 @@
                     <li>Societal interactions</li>
                     <li>Role expectations</li>
                     <li>Interpersonal relationships</li>
-                    <span class="btn btn-primary">See More</span>
-                    <p hidden>Abnormal behavior can seem like a subjective term, but clinical psychologists in this field use some general markers to identify it. If the behavior causes distress to a person or those around them, and if it interferes with their ability to participate in their normal life, then it might be considered abnormal.
-                    
-                        This area of psychology focuses on differentiating between maladaptive and adaptive behaviors. This is the difference between behaviors that are beneficial in the short term versus those that are in fact beneficial in the long term. Some of the disorders studied in this field are:
-                        
-                        Anxiety disorders
-                        Depressive disorders
-                        Eating disorders
-                        Personality disorders</p></p>
+                    Behavioral psychologists work in a variety of settings, such as: 
+                        <li>Hospitals</li>
+                        <li>Universities</li>
+                        <li>Private practices</li>
+                        <li>Government agencies</li>
+                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p><br>
+                    <span class="btn btn-primary">View Source</span>
             </div>
-            <div class="col typeOne">
-                <img src="Source/img/psychology_type/behavior.png" alt="abnormal" style="width: 410px; height: 200px;">
+            <div class="col-12 typeOne">
+                <img src="Source/img/psychology_type/behavior.png" alt="abnormal" style="width: 100%; height: auto;">
                 <h2 class="title">Behavioral Psychology</h2>
                 <p>Behavioral psychology focuses on studying observable behaviors. Behavioral psychology researchers seek to understand why certain behaviors occur and how best to change them. The main focus of behavioral psychologists is to find ways to change problematic behaviors through:
                     <li>Observation</li>
                     <li>Experimentation</li>
                     <li>Analysis</li>
-                    <span class="btn btn-primary">See More</span>
-                    <p hidden>Behavioral psychologists work in a variety of settings, such as: 
+                    Behavioral psychologists work in a variety of settings, such as: 
                         <li>Hospitals</li>
                         <li>Universities</li>
                         <li>Private practices</li>
                         <li>Government agencies</li>
-                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p></p>
+                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p><br>
+                    <span class="btn btn-primary">View Source</span>
             </div>
-            <div class="col typeOne">
-                <img src="Source/img/psychology_type/socialMedia.png" alt="abnormal" style="width: 410px; height: 200px;">
+            <div class="col-12 typeOne">
+                <img src="Source/img/psychology_type/socialMedia.png" alt="abnormal" style="width: 100%; height: auto;">
                 <h2 class="title">Social psychology</h2>
                 <p>Social psychology studies how people interact with each other and how they behave in groups. It focuses on the factors that influence social behavior, such as:
                     <li>Attitudes</li>
@@ -172,13 +185,14 @@
                     <li>Emotions</li>
                     <li>Evaluations</li>
                     <li>Interpersonal relationships</li>
-                    <span class="btn btn-primary">See More</span>
-                    <p hidden>Social psychologists seek to understand and explain how people's thoughts, feelings and actions are impacted by the actual, mental or imagined presence of others. Social psychologists work in many different settings, such as:
+                    Social psychologists seek to understand and explain how people's thoughts, feelings and actions are impacted by the actual, mental or imagined presence of others. Social psychologists work in many different settings, such as:
                         <li>Academic institutions</li>
                         <li>Businesses</li>
                         <li>Government agencies</li>
                         <li>Nonprofit organizations</li>
-                        Social psychologists typically need a doctoral degree and a state licensing credential to work in this field, particularly when their duties intersect with clinical psychology. However, according to the U.S. Bureau of Labor Statistics (BLS), jobs in social work generally require a bachelor’s or master's degree.</p></p>
+                        Social psychologists typically need a doctoral degree and a state licensing credential to work in this field, particularly when their duties intersect with clinical psychology. However, according to the U.S. Bureau of Labor Statistics (BLS), jobs in social work generally require a bachelor’s or master's degree.</p><br>
+                    <span class="btn btn-primary">View Source</span>
+                    
             </div>
         </div>
     </div>
@@ -193,7 +207,7 @@
                     
                     
                 </div>
-                <div class="blog row">
+                <div class="blog row " id="firstBlog">
                     <div class="blog-img col-sm-4">
                         <img src="Source/img/blog-img/depression.jpg" alt="Depression">
                     </div>
@@ -206,22 +220,11 @@
                         <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
                     </div>
                     <div class="details">
-                        <div class="short">ইন্ডিয়া এবং বাংলাদেশ প্রতিবছর কোটিকোটি স্টুডেন্ট হায়ার এডুকেশনের জন্য কলেজে এডমিশন নেয়, যখন আমরা স্কুলে পড়তাম তখন আমাদের মনে হতো যে কলেজ লাইফ বোধহয় খুবই এক্সাইটিং আর এটি ভেবে আমরাও কলেজ বেঞ্চ বানানো শুরু করি, যে এই করব সেই করব নিজের কোর্সের জন্য হাজার হাজার কলেজের মধ্য থেকে পারফেক্ট একটি কলেজকে বেছে নেওয়া এটি বেশ...
-                            <p hidden> কঠিন কাজ। যেমনটি আমরা জানি যে ভবিষ্যতের ক্যারিয়ার জন্য কলেজ ডিগ্রী  একটি বেশ গুরুত্বপূর্ণ ভূমিকা পালন করে আর তার জন্য অনেক ছোটাছুটি করার পর আমরা ভালো একটি কলেজে এডমিশন নেই কিন্তু আপনি কি জানেন ৯৫% কলেজ গ্র্যাজুয়েট আর নট পিট ফর জব মানে ৯৫ পার্সেন্ট স্টুডেন্ট চাকরির যোগ্যই নয় বাকি পাঁচ পারসেন্ট গেজুয়েটরাই  ভালো চাকরি পেয়ে থাকেন আর বাকি ৯৫% ডিগ্রী থাকা সত্ত্বেও চাকরি পায় না যদি আপনিও আজকে কলেজে এডমিশন নিবেন বানিয়েছেন তাহলে আজ আপনি এখান থেকে পাঁচটি টিপসকে জানতে চলেছেন যা কলেজ লাইফ স্টুডেন্টরা করে থাকে আর এর ফলে তাদের পড়াশোনা এবং ক্যারিয়ারে খুবই খারাপ প্রভাব ফেলে যার কারণে তারা তাদের কলেজ লাইফের আসল উদ্দেশ্য এবং সুযোগ-সুবিধা গুলো থেকে বঞ্চিত হয়ে পড়ে আপনি আপনার এই ভুলগুলোকে জেনে নিজের কলেজ লাইফের চার পাঁচ বছরকে বাঁচাতে পারেন এবং একটি ভাল ক্যারিয়ারের আরম্ভ করতে পারেন।
-                                •সব থেকে প্রথম ভুল যা মোস্ট অফ দা স্টুডেন্ট এই করে থাকেন তাহলে Peer pressure  এই প্রেসার এর মানে হলো আপনি অন্যকে দেখে তাদের লাইফ স্টাইল তাদের রুটিনকে দেখে অনেকটা ইনফ্লুয়েন্স হয়ে যান এবং নিজের ভ্যালু এবং গোলস কে ভুলে আপনি তাদের মত হওয়ার চেষ্টাই লেগে পড়েন এই জিনিসটি সাবজেক্ট কে চুজ করার ক্ষেত্রেও হয়ে থাকে 
-                                ফর এক্সাম্পল যদি আপনি একজন মিডল ক্লাসের বা ফ্যামিলি থেকে বিলং করেন তো কলেজে যাওয়ার পর যখন আপনি একজন ছেলে বা মেয়েকে দেখেন যে কিনা রোজ Car বা বাইকে করে কলেজে আসে দামী দামী কাপড় পড়ে বহু মেয়ে তার সাথে ঘুরে রোজ পাটি করে তো এগুলো কি দেখে আপনার মন চাইবে যদি আমিও এরকম লাইভ স্টাইল কে উপভোগ করতে পারতাম তাহলে কত ভালই না হতো এ আশায় বহু স্টুডেন্ট বাড়ি থেকে টাকা নিয়ে তাদের লাইফস্টাইলকে কপি করার চেষ্টা করে আর এর চক্করে তারা তাদের মেইন গোল কে ভুলে যায় যে তারা কি জন্য কলেজে এসেছে যা অবভিয়াসলি পড়াশোনা করা শিখা এবং নিজের গোলকে achieve করা আর বেশিরভাগ স্টুডেন্টদেরই ডিপ্রেশনে যাওয়ার এটি একটি কমন রিজন কারণ যখন বাড়ির লোক টাকা দিতে পারে না তখন সে নিজেকে তুচ্ছ মনে করা শুরু করে নিজের লাইফকে মিনিংলেস ভাবা শুরু করে যা ধীরে ধীরে ডিপ্রেশনে কনভার্ট হয়ে যায় যদি আপনি এখন কলেজে পড়ছেন তাহলে সব সময় মনে রাখবেন যে আপনি কি উদ্দেশ্যের কারণে কলেজে এসেছেন আপনি তো এখানে পড়তে শিখতে নলেজ এবং এক্সপেরিয়েন্স কে বাড়াতে নাকি একটি লাইফ স্টাইল কে মেইনটেইন করতে এসেছেন যদি আপনি সৎ ভাব নিয়ে আপনার কাজকে করেন মানে পড়াশোনা করেন তবেই ভবিষ্যতে গিয়ে যখন আপনি সাকসেস হয়ে যাবেন তখন আপনি নিজেই নিজের লাইফস্টাইলকে চুজ করতে পারবেন।
-                                
-                                •দ্বিতীয় মিসটেক হচ্ছে গার্লফ্রেন্ড বা বয়ফ্রেন্ড
-                                কলেজ হল এমন একটি সময় যখন আমাদের বাড়তি হরমোন প্রচুর পরিমাণে থাকে যদিও অপোজিট জেন্ডার এর প্রতি স্ট্রং  অ্যাট্রাকশন থাকা ন্যাচারাল ব্যাপার কিন্তু এই ন্যাচারাল ব্যাপারটিকে বেশি সিরিয়াসলি নিয়ে গেলে চলবে না সিরিয়াসলি নিতে গিয়ে আপনার মধ্যে গ্রাস তৈরি হবে তাকে প্রপোজ করবেন ব্রেকআপ হবে আর হাজার হাজার ধরনের  বোকামি করতে থাকবেন যেগুলোকে না হয় বাদে দিলাম এইসব কাজে টাইম তো আপনার না হয় বেশ ভালই যাবে কিন্তু আপনার পড়াশোনা শেষ হয়ে যাবে কিছু কিছু স্টুডেন্ট এর তো এক দুই বছর ভালোবাসাই পার হয়ে যায় তারপর যখন ব্রেকআপ হয় তখন তাদের ঘুম ভাঙ্গে আর অনেক ক্ষেত্রে ঘুম ভাঙতে ভাঙতে অনেক দেরি হয়ে যায় হাতে তখন আর টাইম থাকে না যার রিগ্রেট তাদের সারা জীবন থেকে যায় তো যদি আপনিও কলেজে নতুন এডমিশন নিয়ে থাকেন তাহলে মনে রাখবেন কলেজের এই চার পাঁচ বছর আপনার প্রফেশনাল লাইফের জন্য একটি লার্নিং ইয়ার এটাই হল সময় যখন আপনার উপর কোন রেসপন্সিবিলিটি নেই আপনি ফ্রি হয়ে নিজের প্যাশন কে ফলো করতে পারেন এবং নিজের ফিল্ডে এক্সপার্ট হতে পারবেন । সুতরাং রোজ ছেলে বা মেয়ের সাথে চ্যাটিং করার পরিবর্তে সেই সময়কে নিজের গোলসের উপরে দিন নিজের নলেজকে গ্রীন করার দিকে দিন লাইফের লং রেসে এটি আপনার জন্য খুবই হেল্পফুল হবে।
-                                
-                                •তৃতীয় জিনিস যা থেকে আপনার দূরে থাকতে হবে তা হচ্ছে ড্রাগ।
-                                আজকাল কলেজে সিগারেট ড্রাগ এগুলা সেবন করা ট্রেন্ড হয়ে গেছে আজ আপনি প্রায় প্রতিটি কলেজের হোস্টেলে সিগারেট অ্যালকোহল ইত্যাদি  পেয়ে যাবেন শুরু থেকেও মানুষ এগুলো একবার ট্রাই করার জন্য সেবন করে কিন্তু শীঘ্রই তা তাদের অ্যাডিকশন হয়ে যায় আর স্টুডেন্ট এর লাইফ কে ধ্বংস করে দেয়। এগুলা আপনার ব্রেন কে এডিক্টেড বানিয়ে দিবে এবং আপনার গ্রোথ কে থামিয়ে দিবে দেখুন ড্রাগস বা অ্যালকোহল হল এমন জিনিস যা প্রথম প্রথম আপনাকে খুব আনন্দ দেয় দিবে কিন্তু যখন এর অভ্যাস আপনার হয়ে যাবে তখন ভেতর থেকে আপনাকে এগুলো খেতে শুরু করে বহু ক্ষেত্রে ড্রাগস পার্মানেন্ট ব্রেইন ড্যামেজ করেও দেয়।
-                                
-                                সুতরাং এই ভুল গুলো students life এ কখনোই করবেন না।</p>
+                        <div class="short" id="highlight">ইন্ডিয়া এবং বাংলাদেশ প্রতিবছর কোটিকোটি স্টুডেন্ট হায়ার এডুকেশনের জন্য কলেজে এডমিশন নেয়, যখন আমরা স্কুলে পড়তাম তখন আমাদের মনে হতো যে কলেজ লাইফ বোধহয় খুবই এক্সাইটিং আর এটি ভেবে আমরাও কলেজ বেঞ্চ বানানো শুরু করি, যে এই করব সেই করব নিজের কোর্সের জন্য হাজার হাজার কলেজের মধ্য থেকে পারফেক্ট একটি কলেজকে বেছে নেওয়া এটি বেশ...
                         </div>
                         <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
                         <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-primary">Read More</div>
+                        <button type="button" class="btn btn-outline-primary" id="readBtn" data-toggle="collapse" data-target="#more">Read More</button>
                     </div>
                     </div>
                 </div>
@@ -480,6 +483,7 @@
     </footer>
     <script src="main.js"></script>
     <script defer src="scroll.js"></script>
+    <script src="colorThems.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"></script>
 </body>
 </html>
