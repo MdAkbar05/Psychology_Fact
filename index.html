@@ -1,495 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSYCHOLOGY-FACT</title>
     <!-- StyleSheet Link  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
 
     <!-- Favicon Link  -->
-    <link rel="shortcut icon" href="Source/PNG/Asset 2.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="Source/PNG/favicon.png"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap 5 cdn Link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Font-Awesome CDN  -->
-  <script src="https://kit.fontawesome.com/15375f512b.js" crossorigin="anonymous"></script>
- 
-  <!-- animation CDN  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-</head>
-<body class="main-body" id="main-body">
-    <header class="header-area container-fluid text-white " id="header">
-        <!-- Top Bar  -->
-            <div class="topBar">
-                <div class="img_logo">
-                    <img src="Source/PNG/Asset 1.png" alt="logo"><br>
-                </div>
-                <div class="page-title">
-                   <h2 class="siteTitle " id="h2">PSYCHOLOGY.COM</h2>
-                </div>
-                
-                <div class="searchBar">
-                    <input type="text"> <i class="fa-solid fa-magnifying-glass text-dark "></i>
-                </div>
-                <div class="loginBtn">
-                    <a class="login btn btn-outline-primary" href="loginHome.php">Login <i class="fa-solid fa-right-to-bracket"></i></a>|
-                <a class="login btn btn-outline-success" href="loginHome.php">Register <i class="fa-solid fa-user-plus"></i></a>
-                </div>
-            </div>
-            <div class="menuBar">
-                <ul class="menu  text-dark">
-                    <li class="menu_li active">
-                        <a id="home" href="#interface">Home</a>
-                    </li>
-                   <li class="menu_li">
-                        <a id="science" href="#catagory">Catagory</>
-                        <ul class="subMenu">
-                            <li><a href="#">Catagory-1</a></li>
-                            <li><a href="#">Catagory-2</a></li>
-                            <li><a href="#">Catagory-3</a></li>
-                            <li><a href="#">Catagory-4</a></li>
-                            <li><a href="#">Catagory-5</a></li>
-                            <li><a href="#">Catagory-6</a></li>
-                        </ul>
-                   </li>
-                   <li class="menu_li">
-                        <a id="content" href="#">Sciences</a>
-                        <ul class="subMenu">
-                            <li><a href="#">Science-1</a></li>
-                            <li><a href="#">Science-2</a></li>
-                            <li><a href="#">Science-3</a></li>
-                            <li><a href="#">Science-1</a></li>
-                            <li><a href="#">Science-2</a></li>
-                            <li><a href="#">Science-3</a></li>
-                        </ul>
-                   </li>
-                   <li class="menu_li">
-                        <a id="brain" href="#">Brains</a>
-                        <ul class="subMenu">
-                            <li><a href="#">Electricity</a></li>
-                            <li><a href="#">PlayStation</a></li>
-                            <li><a href="#">Telescope</a></li>
-                        </ul>
-                   </li>
-                   <li class="menu_li">
-                        <a id="technology" href="#">Technology</a>
-                        <ul class="subMenu">
-                            <li><a href="#">Electricity</a></li>
-                            <li><a href="#">PlayStation</a></li>
-                            <li><a href="#">Telescope</a></li>
-                        </ul>
-                   </li>
-                   <!-- Social media Navbar  -->
-                   <div class="social_link">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <!-- Control Switcher  -->
-                <div class="colorSwitcher" id="colorSwitcher">
-                    <div class="colorSwitcherBtn" id="colorBtn">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                   
-                    <div class="theme-btn-container">
-                        <span class="themeBtns" data-color="#e7e7e7" style="background-color: #e7e7e7;"></span>
-                        <span class="themeBtns" data-color="#00e0d5" style="background-color: #00e0d5;"></span>
-                        <span class="themeBtns" data-color="#1a0706" style="background-color: #1a0706;"></span>
-                        <span class="themeBtns" data-color="#00115f" style="background-color: #00115f;"></span>
-                        <span class="themeBtns" data-color="#1d1616" style="background-color: #1d1616;"></span>
-                        <span class="themeBtns" data-color="#ffd209" style="background-color: #ffd209;"></span>
-                    </div>
-                </div>
-                   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font-Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/15375f512b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- animation CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+  </head>
+  <body class="main-body" id="main-body">
+    <!-- Main Header  -->
+    <header class="header-area container-fluid text-white" id="header">
+      <!-- Top Bar  -->
+      <div class="topBar">
+        <div class="img_logo">
+          <img src="Source/PNG/header_logo.png" alt="logo" /><br />
+        </div>
+        <div class="page-title">
+          <h2 class="siteTitle" id="h2">PSYCHOLOGY.COM</h2>
+        </div>
+
+        <div class="searchBar">
+          <input type="text" />
+          <i class="fa-solid fa-magnifying-glass text-dark"></i>
+        </div>
+        <div class="loginBtn">
+         
+          <a class="login btn btn-outline-primary" href="loginHome.php"
+            >Register <i class="fa-solid fa-user-plus"></i
+          ></a>
+        </div>
+      </div>
+      <div class="menuBar">
+        <ul class="menu text-dark">
+          <li class="menu_li active">
+            <a id="home" href="#interface">Home</a>
+          </li>
+          <li class="menu_li">
+            <a id="science" href="#catagory">Catagory</a>
+            <ul class="subMenu">
+              <li><a href="#">Catagory-1</a></li>
+              <li><a href="#">Catagory-2</a></li>
+              <li><a href="#">Catagory-3</a></li>
+              <li><a href="#">Catagory-4</a></li>
+              <li><a href="#">Catagory-5</a></li>
+              <li><a href="#">Catagory-6</a></li>
             </ul>
-                
+          </li>
+          <li class="menu_li">
+            <a id="content" href="#">Sciences</a>
+            <ul class="subMenu">
+              <li><a href="#">Science-1</a></li>
+              <li><a href="#">Science-2</a></li>
+              <li><a href="#">Science-3</a></li>
+              <li><a href="#">Science-1</a></li>
+              <li><a href="#">Science-2</a></li>
+              <li><a href="#">Science-3</a></li>
+            </ul>
+          </li>
+          <li class="menu_li">
+            <a id="brain" href="#">Brains</a>
+            <ul class="subMenu">
+              <li><a href="#">Electricity</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">Telescope</a></li>
+            </ul>
+          </li>
+          <li class="menu_li">
+            <a id="technology" href="#">Technology</a>
+            <ul class="subMenu">
+              <li><a href="#">Electricity</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">Telescope</a></li>
+            </ul>
+          </li>
+          <!-- Social media Navbar  -->
+          <div class="social_link">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <!-- Control Switcher  -->
+          <div class="colorSwitcher" id="colorSwitcher">
+            <div class="colorSwitcherBtn" id="colorBtn">
+              <i class="fas fa-cog"></i>
             </div>
-            
-            <div class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li><a class="dropdown-item" href="#">Contents</a></li>
-                  <li><a class="dropdown-item" href="#">Blog</a></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  <li><a class="dropdown-item" href="loginHome.php">Sign up</a></li>
-                </ul>
-              </div>
+
+            <div class="theme-btn-container">
+              <span
+                class="themeBtns"
+                data-color="#ffffff"
+                style="background-color: #ffffff"
+              ></span>
+              <span
+                class="themeBtns"
+                data-color="#00e0d5"
+                style="background-color: #00e0d5"
+              ></span>
+              <span
+                class="themeBtns"
+                data-color="#1a0706"
+                style="background-color: #1a0706"
+              ></span>
+              <span
+                class="themeBtns"
+                data-color="#00115f"
+                style="background-color: #00115f"
+              ></span>
+              <span
+                class="themeBtns"
+                data-color="#1d1616"
+                style="background-color: #1d1616"
+              ></span>
+              <span
+                class="themeBtns"
+                data-color="#ffd209"
+                style="background-color: #ffd209"
+              ></span>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home</a></li>
+          <li><a class="dropdown-item" href="#">Contents</a></li>
+          <li><a class="dropdown-item" href="#">Blog</a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+          <li><a class="dropdown-item" href="loginHome.php">Sign up</a></li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main Interface  -->
     <div class="container-fluid interface" id="interface">
-        <div class="main-area">
-            <h5 class="minTitle text-warning">SAMARTIAN SOCIETY</h5>
-            <h1 class="title">Welcome to Psychology Knowledge</h1>
-            <p>At the good samaritan society,you arn't just a customer.We believe you'ar someone who deserves to be trated with respect,dignity</p>
-            <buttton class="btn btn-outline-warning rounded-pill">Contact US</buttton>
-        </div>
-        <div class="img">
-            <img src="Source/PNG/UI-asset.png" alt="UI_Asset">
-        </div>
-    </div>
-    <!-- Main Interface End  -->
-
-
-    <!-- Tpye OF Psychology -->
-    <div class="container psychologyType" id="catagory">
-        <div class="typeTitle">Different type of Psychology</div>
-        <hr>
-        <div class="heading bg-dark">
-            <img src="Source/img/psychology_type/main_theme.jpg " alt="theme">
-            <h2>The different types of psychology!</h2>
-            <br><span>By Cooper Nelson</span>
-        </div><hr>
-        <div class="row typeArea">
-            <div class="col-12 typeOne">
-                <img src="Source/img/psychology_type/abnormalType.png" alt="abnormal" style="width: 100%; height: auto;">
-                <h2 class="title">Abnormal Psychology</h2>
-                <p>Abnormal psychology specializes in the study of behavioral deviations. These include atypical behaviors, emotions and thoughts. Abnormal psychology researchers seek to understand why these deviations occur and how best to treat them.
-
-                    Psychologists focus on such aspects of life as:
-                    
-                    <li>Societal interactions</li>
-                    <li>Role expectations</li>
-                    <li>Interpersonal relationships</li>
-                    Behavioral psychologists work in a variety of settings, such as: 
-                        <li>Hospitals</li>
-                        <li>Universities</li>
-                        <li>Private practices</li>
-                        <li>Government agencies</li>
-                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p><br>
-                    <span class="btn btn-primary">View Source</span>
-            </div>
-            <div class="col-12 typeOne">
-                <img src="Source/img/psychology_type/behavior.png" alt="abnormal" style="width: 100%; height: auto;">
-                <h2 class="title">Behavioral Psychology</h2>
-                <p>Behavioral psychology focuses on studying observable behaviors. Behavioral psychology researchers seek to understand why certain behaviors occur and how best to change them. The main focus of behavioral psychologists is to find ways to change problematic behaviors through:
-                    <li>Observation</li>
-                    <li>Experimentation</li>
-                    <li>Analysis</li>
-                    Behavioral psychologists work in a variety of settings, such as: 
-                        <li>Hospitals</li>
-                        <li>Universities</li>
-                        <li>Private practices</li>
-                        <li>Government agencies</li>
-                        John Watson is generally considered the father of behavioral psychology. Behaviorists emphasize how “stimuli,” or the interactions between a subject and their environment, enforce or punish certain behavior. Behavioral psychology has applications in clinical psychology and research settings.</p><br>
-                    <span class="btn btn-primary">View Source</span>
-            </div>
-            <div class="col-12 typeOne">
-                <img src="Source/img/psychology_type/socialMedia.png" alt="abnormal" style="width: 100%; height: auto;">
-                <h2 class="title">Social psychology</h2>
-                <p>Social psychology studies how people interact with each other and how they behave in groups. It focuses on the factors that influence social behavior, such as:
-                    <li>Attitudes</li>
-                    <li>Beliefs</li>
-                    <li>Emotions</li>
-                    <li>Evaluations</li>
-                    <li>Interpersonal relationships</li>
-                    Social psychologists seek to understand and explain how people's thoughts, feelings and actions are impacted by the actual, mental or imagined presence of others. Social psychologists work in many different settings, such as:
-                        <li>Academic institutions</li>
-                        <li>Businesses</li>
-                        <li>Government agencies</li>
-                        <li>Nonprofit organizations</li>
-                        Social psychologists typically need a doctoral degree and a state licensing credential to work in this field, particularly when their duties intersect with clinical psychology. However, according to the U.S. Bureau of Labor Statistics (BLS), jobs in social work generally require a bachelor’s or master's degree.</p><br>
-                    <span class="btn btn-primary">View Source</span>
-                    
-            </div>
-        </div>
-    </div>
-<!-- Tpye OF Psychology End -->
-
-    <div class="container section2">
-        <div class="blogArea row">
-            <div class="col-sm-10">
-                <div class="blog-title">
-                    <div class="spinner-grow text-primary"></div >----Latest Amaizing Facts----<div class="spinner-grow text-danger"></div>
-                    
-                    
-                    
-                </div>
-                <div class="blog row " id="firstBlog">
-                    <div class="blog-img col-sm-4">
-                        <img src="Source/img/blog-img/depression.jpg" alt="Depression">
-                    </div>
-                    <div class="blog-details col-sm-8">
-                        <h2 class="blogTitle">আপনি কি জানেন কলেজ জীবনে যে ৫টি ভুল কোনদিনই করা উচিত নয়!</h2>
-                    <div class="times">
-                        <span><i class="fa-regular fa-calendar"></i> May 21,2021  </span>
-                        <span><i class="fa-solid fa-tag"></i> Life Style  </span>
-                        <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
-                        <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
-                    </div>
-                    <div class="details">
-                        <div class="short" id="highlight">ইন্ডিয়া এবং বাংলাদেশ প্রতিবছর কোটিকোটি স্টুডেন্ট হায়ার এডুকেশনের জন্য কলেজে এডমিশন নেয়, যখন আমরা স্কুলে পড়তাম তখন আমাদের মনে হতো যে কলেজ লাইফ বোধহয় খুবই এক্সাইটিং আর এটি ভেবে আমরাও কলেজ বেঞ্চ বানানো শুরু করি, যে এই করব সেই করব নিজের কোর্সের জন্য হাজার হাজার কলেজের মধ্য থেকে পারফেক্ট একটি কলেজকে বেছে নেওয়া এটি বেশ...
-                        </div>
-                        <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
-                        <button type="button" class="btn btn-outline-primary" id="readBtn" data-toggle="collapse" data-target="#more">Read More</button>
-                    </div>
-                    </div>
-                </div>
-                <div class="blog row">
-                    <div class="blog-img col-sm-4">
-                        <img src="Source/img/blog-img/idea.jpg" alt="Depression">
-                    </div>
-                    <div class="blog-details col-sm-8">
-                        <h2 class="blogTitle">আপনি কি জানেন Lorem ipsum dolor sit amet.</h2>
-                    <div class="times">
-                        <span><i class="fa-regular fa-calendar"></i> May 21,2021  </span>
-                        <span><i class="fa-solid fa-tag"></i> Life Style  </span>
-                        <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
-                        <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
-                    </div>
-                    <div class="details">
-                        <div class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum repudiandae et maxime laudantium officia aut animi sunt ipsa aliquid impedit tempore soluta provident dolorem, modi recusandae fugit ex dignissimos quae. Similique, nesciunt quas! Cum quibusdam delectus suscipit nisi repellendus fuga iure porro corrupti? Suscipit nemo blanditiis cumque nobis cum?</div>
-                        <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-primary">Read More</div>
-                    </div>
-                    </div>
-                </div>
-                <div class="blog row">
-                    <div class="blog-img col-sm-4">
-                        <img src="Source/img/blog-img/thinking.jpg" alt="Depression">
-                    </div>
-                    <div class="blog-details col-sm-8">
-                        <h2 class="blogTitle">আপনি কি জানেন Lorem ipsum dolor sit amet.</h2>
-                    <div class="times">
-                        <span><i class="fa-regular fa-calendar"></i> May 21,2021  </span>
-                        <span><i class="fa-solid fa-tag"></i> Life Style  </span>
-                        <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
-                        <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
-                    </div>
-                    <div class="details">
-                        <div class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum repudiandae et maxime laudantium officia aut animi sunt ipsa aliquid impedit tempore soluta provident dolorem, modi recusandae fugit ex dignissimos quae. Similique, nesciunt quas! Cum quibusdam delectus suscipit nisi repellendus fuga iure porro corrupti? Suscipit nemo blanditiis cumque nobis cum?</div>
-                        <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-primary">Read More</div>
-                    </div>
-                    </div>
-                </div>
-                <div class="blog row">
-                    <div class="blog-img col-sm-4">
-                        <img src="Source/img/blog-img/relax.jpg" alt="Depression">
-                    </div>
-                    <div class="blog-details col-sm-8">
-                        <h2 class="blogTitle">আপনি কি জানেন Lorem ipsum dolor sit amet.</h2>
-                    <div class="times">
-                        <span><i class="fa-regular fa-calendar"></i> May 21,2021  </span>
-                        <span><i class="fa-solid fa-tag"></i> Life Style  </span>
-                        <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
-                        <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
-                    </div>
-                    <div class="details">
-                        <div class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum repudiandae et maxime laudantium officia aut animi sunt ipsa aliquid impedit tempore soluta provident dolorem, modi recusandae fugit ex dignissimos quae. Similique, nesciunt quas! Cum quibusdam delectus suscipit nisi repellendus fuga iure porro corrupti? Suscipit nemo blanditiis cumque nobis cum?</div>
-                        <div class="btn btn-outline-success"><i class="fa-regular fa-thumbs-up" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-dark"><i class="fa-regular fa-comment" style="font-size:25px ;"></i></div>
-                        <div class="btn btn-outline-primary">Read More</div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2 ">
-                <div class="input-area">
-                    <input type="text" placeholder="Type a keyword and action enter">
-                </div>
-                <ul>
-                    <li>Amaizing Facts</li>
-                    <li>Incredible Facts</li>
-                    <li>Brain-Hack Facts</li>
-                    <li>Meditation Facts</li>
-                    <li>Exercise Facts</li>
-                </ul>
-
-                <form action="form" class="iq">
-                    <input type="text" placeholder="Enter Your Intelligence Age"><br>
-                    <div>--------------------------------------* 100</div>
-                    <input type="text" placeholder="Enter Your Actual Age"><br> <br>
-                    <button>Test IQ</button>
-                </form>
-            </div>
-            
-        </div>
-    </div>
-    <div class="container section1" id="section1">
-        <div class="section1Heading">
-            <div class="welcome">WELCOME TO PSYCHOLOGY THEORY</div>
-            <div class="service">PSYCHOLOGY GOSPEL</div>
-        </div>
-        <div class="row">
-            <div class="col Consciousness">
-                <img class="Consciousness" src="Source/img/Featured-img/Consciousness.jpg" alt="Consciousness">
-                <div class="logo">
-                    <img src="Source/img/brain_logo.jpg.png" alt="brain">
-                </div>
-                <h3 for="img">Spiritual Consciousness</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus molestiae tempora laborum suscipit atque mollitia laboriosam fuga incidunt ut.</p>
-                <div class="btn btn-outline-danger rounded-pill mt-5"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-            <div class="col Personality">
-                <img class="Personality" src="Source/img/Featured-img/personality-bg.jpg" alt="Personality">
-                <div class="logo">
-                    <img src="Source/img/creative_ida.png" alt="creative">
-                </div>
-                <h3 for="img">Personality Evolution</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus molestiae tempora laborum suscipit atque mollitia laboriosam fuga incidunt ut.</p>
-                <div class="btn btn-outline-danger rounded-pill mt-5"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-            <div class="col Psychology">
-                <img class="Psychology" src="Source/img/Featured-img/Psychology.jpg" alt="Psychology">
-                <div class="logo">
-                    <img src="Source/img/knowledge.png" alt="knowledge">
-                </div>
-                <h3 for="img">Psychology Truth</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus molestiae tempora laborum suscipit atque mollitia laboriosam fuga incidunt ut.</p>
-                <div class="btn btn-outline-danger rounded-pill mt-5"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-        </div>
+      <div class="main-area">
+        <h5 class="minTitle text-warning">SAMARTIAN SOCIETY</h5>
+        <h1 class="title">Welcome to Psychology Knowledge</h1>
+        <p>
+          At the good samaritan society,you arn't just a customer.We believe
+          you'ar someone who deserves to be trated with respect,dignity
+        </p>
+        <buttton class="btn btn-outline-warning rounded-pill"
+          >Contact US</buttton
+        >
+      </div>
+      <div class="img">
+        <img src="Source/PNG/UI-asset.png" alt="UI_Asset" />
+      </div>
     </div>
     
 
+    <!-- Basic Knowledge Of Psychology  -->
+    <div class="basic-psychology container">
+      <div class="heading">6 Psychology Basics You Need to Know</div>
+      <div class="sub-heading">Start your study with these key psychology facts and concepts</div>
+      <div class="details"><span>By Kendra Cherry </span>| <span>Updated on April 02, 2016</span></div>
+      <!-- Basic Card  -->
+      <div class="row">
+        <div class="col">
+          <div class="card-heading">The Study of the Mind and Behavior</div>
+          <div class="card-img">
+            <img src="Source/PNG/col_bg_1.png" alt="mind">
+          </div>
+          <div class="card-details">Psychology can be defined as the study of mental processes and behavior. The term comes from the Greek words psyche, meaning "breath, spirit, soul," and logia, meaning "study of."
 
+            Psychology has not always existed as it has today. In fact, it is considered a relatively young discipline, although as the eminent psychologist Hermann Ebbinghaus explained, it has a short past but a long history.
+            
+            Psychology emerged from biology and philosophy and is closely linked to other disciplines including sociology, medicine, linguistics, and anthropology.
+            
+            Psychology has quickly grown to play a tremendous role in the world today. Psychologists are employed in hospitals, mental health clinics, schools, colleges and universities, government agencies, private businesses, and private practices.
+            
+            They perform a wide variety of tasks and roles ranging from treating mental illness to performing research to influencing public health policy.</div>
+            <div class="btn btn-primary">See More</div>
+        </div>
+
+        <div class="col">
+          <div class="card-heading">Scientific Methods</div>
+        <div class="card-img">
+          <img src="Source/PNG/col_bg_2.png" alt="Methods">
+        </div>
+        <div class="card-details">One of the most common myths about psychology is that it is just "common sense." The problem with this is that psychological research has helped demonstrate that many of the things that we believe are just common sense are actually not true at all.
+          For instance, it's become "common sense" that smoking cigarettes is dangerous. However, people continue to smoke anyway. Psychology helps us go deeper than common sense and understand why human behavior occurs, as well as how to change it.
+          By challenging some of our misconceptions about how and why people behave as they do, psychologists are able to provide answers that help solve real-world problems.
+          Psychology relies on scientific methods to investigate questions and arrive at conclusions. Using empirical methods, researchers are able to discover relationships between different variables.
+          Psychologists use a range of techniques to study the human mind and behavior.</div>
+          <div class="btn btn-primary">See More</div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card-heading">Multiple Perspectives</div>
+        <div class="card-img">
+          <img src="Source/PNG/col_bg_3.png" alt="multiple">
+        </div>
+        <div class="card-details">Topics and questions in psychology can be looked at in a number of different ways. Each perspective helps contribute a new level of understanding to a topic. Some of the major perspectives in psychology5 include:
+
+          Biological perspective
+          Cognitive perspective
+          Behavioral perspective
+          Evolutionary perspective
+          Humanistic perspective
+          Imagine, for example, that psychologists are trying to understand the different factors that contribute to bullying.
+          
+          One researcher might take a biological perspective and look at the role of genetics and the brain. Another might take a behavioral perspective and look at how bullying behaviors are reinforced by the environment. Another might take a social perspective and analyze the impact of group pressure.
+          
+          No single perspective is right. Each contributes to how we understand a topic and allows researchers to analyze the myriad influences that contribute to certain actions.
+          
+          Then, they can come up with multi-faceted solutions to combat problematic actions and encourage better outcomes and healthier behaviors</div>
+          <div class="btn btn-primary">See More</div>
+        </div>
+
+        <div class="col">
+          <div class="card-heading">Psychology Subfields</div>
+        <div class="card-img">
+          <img src="Source/PNG/col_bg_4.png" alt="Subfields">
+        </div>
+        <div class="card-details">In addition to many different perspectives, there are many branches of psychology. Psychologists often opt to specialize in a particular area. Some of the biggest subfields within psychology are:6
+          Clinical psychology: Clinical psychologists provide mental and behavioral health care and often provide consultation to communities, as well as training and education.7 If you are experiencing emotional or psychological symptoms, you might need a clinical or counseling psychologist.
+          Psychologists are skilled at understanding the role these factors play in influencing health, happiness, and overall well-being.
+          Cognitive psychology: This subfield focuses on mental processes such as attention, thinking, language, and memory.
+          Personality psychology: This subfield of psychology addresses personality and its development, traits, variations, and maladaptive forms (such as personality disorders).12
+          Social psychology: Social psychologists focus on human behavior in a group setting. They study group behaviors such as prejudice, bias, bullying, criminal behavior, and substance use.</div>
+          <div class="btn btn-primary">See More</div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card-heading">Beyond Mental Health</div>
+        <div class="card-img">
+          <img src="Source/PNG/col_bg_5.png" alt="mental">
+        </div>
+        <div class="card-details">When you think of psychology, do you envision a therapist jotting down notes as a client recounts childhood experiences?
+          Psychology has a powerful impact on the world today. Our daily lives are deeply impacted by the interaction of biology, relationships, and mental processes.
+          While therapy is certainly a big part of psychology, it is not the only thing that psychologists do.
+          Psychologists are skilled at understanding the role these factors play in influencing health, happiness, and overall well-being.Human psychology is defined as the science of the mind and behavior. It encompasses the scientific study of the mind and behavior and the application of these principles to help prevent, treat, and diagnose mental health conditions.
+          In fact, many psychologists don't work in the field of mental health at all. Psychology encompasses other areas including teaching, research, and consulting.
+          Mental health is certainly a major area of interest in psychology, but psychologists also do things such as help athletes hone their motivation and mental focus, help design products that are safe and useful, and help businesses understand how to influence consumers.</div>
+          <div class="btn btn-primary">See More</div>
+        </div>
+        <div class="col">
+          <div class="card-heading">Making Human Lives Better</div>
+        <div class="card-img">
+          <img src="Source/PNG/col_bg_6.png" style="width: 100px; height: 85px;" alt="Human">
+        </div>
+        <div class="card-details">Among the major goals of psychology are to describe, explain, predict, and improve human behavior. Some psychologists accomplish this by contributing to our basic understanding of how people think, feel, and behave. Others work in applied settings to solve real-world problems that have an impact on everyday life.
+          Psychologists are skilled at understanding the role these factors play in influencing health, happiness, and overall well-being.Psychologists are skilled at understanding the role these factors play in influencing health
+          And finally, many psychologists devote their lives to helping people who are struggling with psychological issues.
+          Psychologists are skilled at understanding the role these factors play in influencing health
+          You may find these professionals working in hospitals, mental health clinics, private practices, and other settings to diagnose psychological disorders and provide psychotherapy to people from all walks of life.16
+          Psychology encompasses other areas including teaching, research, and consulting.
+          While the work of psychologists may be highly varied, they all share one overriding goal: to help people live better lives.</div>
+          <div class="btn btn-primary">See More</div>
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+    <!-- Tpye OF Psychology -->
+    <div class="container psychologyType" id="catagory"><br><br><br><br>
+      <div class="typeTitle">Different type of Psychology</div>
+      <hr />
+      <div class="heading ">
+        <h2>The different types of psychology!</h2>
+        <br /><span>By Cooper Nelson</span>
+      </div>
+      <hr />
+      <div class="row typeArea">
+        <div class="type-heading">3 Psychology Type are very Familiar</div>
+        <div class="col-12 typeOne">
+          <img
+            src="Source/img/psychology_type/abnormalType.png"
+            alt="abnormal"
+            style="width: 100%; height: auto"
+          />
+          <h2 class="title">Abnormal Psychology</h2>
+          <p>
+            Abnormal psychology specializes in the study of behavioral
+            deviations. These include atypical behaviors, emotions and thoughts.
+            Abnormal psychology researchers seek to understand why these
+            deviations occur and how best to treat them. Psychologists focus on
+            such aspects of life as:
+
+            <li>Societal interactions</li>
+            <li>Role expectations</li>
+            <li>Interpersonal relationships</li>
+            Behavioral psychologists work in a variety of settings, such as:
+            <li>Hospitals</li>
+            <li>Universities</li>
+            <li>Private practices</li>
+            <li>Government agencies</li>
+            John Watson is generally considered the father of behavioral
+            psychology. Behaviorists emphasize how “stimuli,” or the
+            interactions between a subject and their environment, enforce or
+            punish certain behavior. Behavioral psychology has applications in
+            clinical psychology and research settings.
+          </p>
+          <br />
+          <span class="btn btn-primary">View Source</span>
+        </div>
+        <div class="col-12 typeOne">
+          <img
+            src="Source/img/psychology_type/behavior.png"
+            alt="abnormal"
+            style="width: 100%; height: auto"
+          />
+          <h2 class="title">Behavioral Psychology</h2>
+          <p>
+            Behavioral psychology focuses on studying observable behaviors.
+            Behavioral psychology researchers seek to understand why certain
+            behaviors occur and how best to change them. The main focus of
+            behavioral psychologists is to find ways to change problematic
+            behaviors through:
+            <li>Observation</li>
+            <li>Experimentation</li>
+            <li>Analysis</li>
+            Behavioral psychologists work in a variety of settings, such as:
+            <li>Hospitals</li>
+            <li>Universities</li>
+            <li>Private practices</li>
+            <li>Government agencies</li>
+            John Watson is generally considered the father of behavioral
+            psychology. Behaviorists emphasize how “stimuli,” or the
+            interactions between a subject and their environment, enforce or
+            punish certain behavior. Behavioral psychology has applications in
+            clinical psychology and research settings.
+          </p>
+          <br />
+          <span class="btn btn-primary">View Source</span>
+        </div>
+        <div class="col-12 typeOne">
+          <img
+            src="Source/img/psychology_type/socialMedia.png"
+            alt="abnormal"
+            style="width: 100%; height: auto"
+          />
+          <h2 class="title">Social psychology</h2>
+          <p>
+            Social psychology studies how people interact with each other and
+            how they behave in groups. It focuses on the factors that influence
+            social behavior, such as:
+            <li>Attitudes</li>
+            <li>Beliefs</li>
+            <li>Emotions</li>
+            <li>Evaluations</li>
+            <li>Interpersonal relationships</li>
+            Social psychologists seek to understand and explain how people's
+            thoughts, feelings and actions are impacted by the actual, mental or
+            imagined presence of others. Social psychologists work in many
+            different settings, such as:
+            <li>Academic institutions</li>
+            <li>Businesses</li>
+            <li>Government agencies</li>
+            <li>Nonprofit organizations</li>
+            Social psychologists typically need a doctoral degree and a state
+            licensing credential to work in this field, particularly when their
+            duties intersect with clinical psychology. However, according to the
+            U.S. Bureau of Labor Statistics (BLS), jobs in social work generally
+            require a bachelor’s or master's degree.
+          </p>
+          <br />
+          <span class="btn btn-primary">View Source</span>
+        </div>
+      </div>
+    </div>
+    <!-- Tpye OF Psychology End -->
+
+    <!-- write post design -->
+    <div class="post ">
+      <div class="postHeading">Write Your Amaizing Fact</div>
+      <div class="image test">Select Image :  <input type="file"></div>
+      <div class="blogTitle test">Blogs Title: <input type="text"></div>
+      <div class="discription test">Discription : <input class="discrip" type="text"> </div>
+      <input type="submit" class="btn btn-primary" value="Post">
+    </div>
+
+    <!-- Post design -->
+    <div class="container section2">
+      <div class="blogArea row">
+        <div class="col-sm-10">
+          <div class="blog-title">
+            <div class="spinner-grow text-primary"></div>
+            ----Latest Amaizing Facts----
+            <div class="spinner-grow text-danger"></div>
+          </div>
+          <div class="blog row" id="firstBlog">
+            <div class="blog-img col-sm-4">
+              <img src="Source/img/blog-img/depression.jpg" alt="Depression" />
+            </div>
+            <div class="blog-details col-sm-8">
+              <h2 class="blogTitle">
+                আপনি কি জানেন কলেজ জীবনে যে ৫টি ভুল কোনদিনই করা উচিত নয়!
+              </h2>
+              <div class="times">
+                <span><i class="fa-regular fa-calendar"></i> May 21,2021 </span>
+                <span><i class="fa-solid fa-tag"></i> Life Style </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
+                <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
+              </div>
+              <div class="details">
+                <div class="short" id="highlight">
+                  ইন্ডিয়া এবং বাংলাদেশ প্রতিবছর কোটিকোটি স্টুডেন্ট হায়ার
+                  এডুকেশনের জন্য কলেজে এডমিশন নেয়, যখন আমরা স্কুলে পড়তাম তখন
+                  আমাদের মনে হতো যে কলেজ লাইফ বোধহয় খুবই এক্সাইটিং আর এটি ভেবে
+                  আমরাও কলেজ বেঞ্চ বানানো শুরু করি, যে এই করব সেই করব নিজের
+                  কোর্সের জন্য হাজার হাজার কলেজের মধ্য থেকে পারফেক্ট একটি কলেজকে
+                  বেছে নেওয়া এটি বেশ...
+                </div>
+                <div class="btn btn-outline-success">
+                  <i
+                    class="fa-regular fa-thumbs-up"
+                    style="font-size: 25px"
+                  ></i>
+                </div>
+                <div class="btn btn-outline-dark">
+                  <i class="fa-regular fa-comment" style="font-size: 25px"></i>
+                </div>
+                <button type="button"
+                  class="btn btn-outline-primary"
+                  id="readBtn">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="blog row">
+            <div class="blog-img col-sm-4">
+              <img src="Source/img/blog-img/idea.jpg" alt="Depression" />
+            </div>
+            <div class="blog-details col-sm-8">
+              <h2 class="blogTitle">
+                আপনি কি জানেন Lorem ipsum dolor sit amet.
+              </h2>
+              <div class="times">
+                <span><i class="fa-regular fa-calendar"></i> May 21,2021 </span>
+                <span><i class="fa-solid fa-tag"></i> Life Style </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
+                <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
+              </div>
+              <div class="details">
+                <div class="short">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  ipsum repudiandae et maxime laudantium officia aut animi sunt
+                  ipsa aliquid impedit tempore soluta provident dolorem, modi
+                  recusandae fugit ex dignissimos quae. Similique, nesciunt
+                  quas! Cum quibusdam delectus suscipit nisi repellendus fuga
+                  iure porro corrupti? Suscipit nemo blanditiis cumque nobis
+                  cum?
+                </div>
+                <div class="btn btn-outline-success">
+                  <i
+                    class="fa-regular fa-thumbs-up"
+                    style="font-size: 25px"
+                  ></i>
+                </div>
+                <div class="btn btn-outline-dark">
+                  <i class="fa-regular fa-comment" style="font-size: 25px"></i>
+                </div>
+                <div class="btn btn-outline-primary">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="blog row">
+            <div class="blog-img col-sm-4">
+              <img src="Source/img/blog-img/thinking.jpg" alt="Depression" />
+            </div>
+            <div class="blog-details col-sm-8">
+              <h2 class="blogTitle">
+                আপনি কি জানেন Lorem ipsum dolor sit amet.
+              </h2>
+              <div class="times">
+                <span><i class="fa-regular fa-calendar"></i> May 21,2021 </span>
+                <span><i class="fa-solid fa-tag"></i> Life Style </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
+                <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
+              </div>
+              <div class="details">
+                <div class="short">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  ipsum repudiandae et maxime laudantium officia aut animi sunt
+                  ipsa aliquid impedit tempore soluta provident dolorem, modi
+                  recusandae fugit ex dignissimos quae. Similique, nesciunt
+                  quas! Cum quibusdam delectus suscipit nisi repellendus fuga
+                  iure porro corrupti? Suscipit nemo blanditiis cumque nobis
+                  cum?
+                </div>
+                <div class="btn btn-outline-success">
+                  <i
+                    class="fa-regular fa-thumbs-up"
+                    style="font-size: 25px"
+                  ></i>
+                </div>
+                <div class="btn btn-outline-dark">
+                  <i class="fa-regular fa-comment" style="font-size: 25px"></i>
+                </div>
+                <div class="btn btn-outline-primary">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="blog row">
+            <div class="blog-img col-sm-4">
+              <img src="Source/img/blog-img/relax.jpg" alt="Depression" />
+            </div>
+            <div class="blog-details col-sm-8">
+              <h2 class="blogTitle">
+                আপনি কি জানেন Lorem ipsum dolor sit amet.
+              </h2>
+              <div class="times">
+                <span><i class="fa-regular fa-calendar"></i> May 21,2021 </span>
+                <span><i class="fa-solid fa-tag"></i> Life Style </span>
+                <span><i class="fa-regular fa-thumbs-up"></i> 6.3k Like</span>
+                <span><i class="fa-regular fa-comment"></i>1.7k Comment</span>
+              </div>
+              <div class="details">
+                <div class="short">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  ipsum repudiandae et maxime laudantium officia aut animi sunt
+                  ipsa aliquid impedit tempore soluta provident dolorem, modi
+                  recusandae fugit ex dignissimos quae. Similique, nesciunt
+                  quas! Cum quibusdam delectus suscipit nisi repellendus fuga
+                  iure porro corrupti? Suscipit nemo blanditiis cumque nobis
+                  cum?
+                </div>
+                <div class="btn btn-outline-success">
+                  <i
+                    class="fa-regular fa-thumbs-up"
+                    style="font-size: 25px"
+                  ></i>
+                </div>
+                <div class="btn btn-outline-dark">
+                  <i class="fa-regular fa-comment" style="font-size: 25px"></i>
+                </div>
+                <div class="btn btn-outline-primary">Read More</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="input-area">
+            <input type="text" placeholder="Type a keyword and action enter" />
+          </div>
+          <ul>
+            <li>Amaizing Facts</li>
+            <li>Incredible Facts</li>
+            <li>Brain-Hack Facts</li>
+            <li>Meditation Facts</li>
+            <li>Exercise Facts</li>
+          </ul>
+
+          <form action="form" class="iq">
+            <input
+              type="text"
+              placeholder="Enter Your Intelligence Age"
+            /><br />
+            <div>--------------------------------------* 100</div>
+            <input type="text" placeholder="Enter Your Actual Age" /><br />
+            <br />
+            <button>Test IQ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container section1" id="section1">
+      <div class="section1Heading">
+        <div class="welcome">WELCOME TO PSYCHOLOGY THEORY</div>
+        <div class="service">PSYCHOLOGY GOSPEL</div>
+      </div>
+      <div class="row">
+        <div class="col Consciousness">
+          <img
+            class="Consciousness"
+            src="Source/img/Featured-img/Consciousness.jpg"
+            alt="Consciousness"
+          />
+          <div class="logo">
+            <img src="Source/img/brain_logo.jpg.png" alt="brain" />
+          </div>
+          <h3 for="img">Spiritual Consciousness</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            repellendus molestiae tempora laborum suscipit atque mollitia
+            laboriosam fuga incidunt ut.
+          </p>
+          <div class="btn btn-outline-danger rounded-pill mt-5">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="col Personality">
+          <img
+            class="Personality"
+            src="Source/img/Featured-img/personality-bg.jpg"
+            alt="Personality"
+          />
+          <div class="logo">
+            <img src="Source/img/creative_ida.png" alt="creative" />
+          </div>
+          <h3 for="img">Personality Evolution</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            repellendus molestiae tempora laborum suscipit atque mollitia
+            laboriosam fuga incidunt ut.
+          </p>
+          <div class="btn btn-outline-danger rounded-pill mt-5">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="col Psychology">
+          <img
+            class="Psychology"
+            src="Source/img/Featured-img/Psychology.jpg"
+            alt="Psychology"
+          />
+          <div class="logo">
+            <img src="Source/img/knowledge.png" alt="knowledge" />
+          </div>
+          <h3 for="img">Psychology Truth</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            repellendus molestiae tempora laborum suscipit atque mollitia
+            laboriosam fuga incidunt ut.
+          </p>
+          <div class="btn btn-outline-danger rounded-pill mt-5">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer row" id="footer">
-        <div class="col  bg-dark">
-            <h2 class="title">Dr Jane Mellow</h2>
-            <h5 class="subTitle">PSYCHOLOGIST</h5>
-            <p class="paragrap">A small river Named Ducid Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis sint unde a omnis?</p>
-            <h3 class="titleTwo">Follow US</h3>
-            <div class="icon">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-youtube"></i>
-            </div>
+      <div class="col bg-dark">
+        <h2 class="title">Dr Jane Mellow</h2>
+        <h5 class="subTitle">PSYCHOLOGIST</h5>
+        <p class="paragrap">
+          A small river Named Ducid Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magnam quis sint unde a omnis?
+        </p>
+        <h3 class="titleTwo">Follow US</h3>
+        <div class="icon">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-youtube"></i>
         </div>
-        <div class="col bg-dark">
-            <h2 class="title">About us</h2>
-            <details>
-                <summary class="text-light">SERIES OVERVIEW</summary>
-                <p class="text-light">The Discovering Psychology telecourse and educational video series first premiered in 1990 as a visual resource for teaching introductory psychology. The 26 video programs review the history of the field, including the work of early and contemporary theorists, practitioners, and researchers, illustrating their work with footage of classic experiments and modern studies. They tell the story of psychology through demonstrations, classic experiments and simulations, current research, documentary footage, and computer animation all based on extensive investigation and superior scholarship.
-
-                The Updated Edition, released in 2001, highlights major new developments in the field, and new areas of inquiry by theleading researchers. In addition to the new and updated video programs, Discovering Psychology: Updated Edition includesthis interactive website providing video program extensions including interviews with researchers, essays, and details onexperiments. In addition, the site offers five interactive explorations of facets of psychology including its history,research methods, the human brain, human development, and approaches to treatment. The three new video programs of theUpdated Edition are Applying Psychology in Life, which explores the role of psychology: in law, conflict negotiation,ergonomics, and space travel, and human performance; Cognitive Neuroscience presenting new ideas in brain research and theapplication of brain mapping technology, and Cultural Psychology which probes a complex field integrating social andpersonality psychology, anthropology and other social sciences. Complete program titles are available on the site map.
-                    
-                Discovering Psychology: Updated Edition enables students, as well as general viewers, to learn psychology’s history, observepsychology in practice, and better understand its relevance to their own lives.</p>
-            </details>
-            <details>
-                <summary class="text-light">SRIES AUDIENCE</summary>
-                <p class="text-light">Discovering Psychology: Updated Edition may be used as a video resource for classes, libraries, and media centers or as a telecourse for distant learners.</p>
-            </details>
-            <details>
-                <summary class="text-light">ABOUT THE HOST</summary>
-                <p class="text-light">Philip G. Zimbardo, Professor of Psychology at Stanford University, is an internationally acknowledged researcher, teacher, and author. He has published more than two dozen text and trade books and more than 200 professional articles on a wide range of topics in many areas of animal and human behavior. Professor Zimbardo has received numerous awards for his distinguished teaching, creative research, dedicated social action, and career-long contributions to psychology. He helped to create both the original Discovering Psychology telecourse and the revision and update of this influential learning experience. Professor Zimbardo has been teaching introductory psychology for more than 40 years.</p>
-            </details>
-            <details>
-                <summary class="text-light">SERIES PARTICIPANTS</summary>
-                <p class="text-light">All interviews for Discovering Psychology, updated edition, are new unless otherwise indicated.
-
-                    Program 1: Past, Present, and Promise (Updated)
-                    
-                    Emanuel Donchin, University of South Florida, Tampa (1989 interview: University of Illinois, Urbana-Champaign)
-                    Robert Rosenthal, University of California-Riverside (1989 interview: Harvard University)
-                    Mahzarin R. Banaji, Harvard University
-                    
-                    Program 2: Understanding Research (Updated)
-                    
-                    Jerome D. Frank, The John Hopkins University School of Medicine
-                    Daryl Bem, Cornell University
-                    Christina Maslach, University of California, Berkeley
-                    Leonard Saxe, Brandeis University (1989 interview: Boston University)
-                    
-                    Program 3: The Behaving Brain (Updated)
-                    
-                    Roy E. John, Director, Brain Research Lab, New York University School of Medicine
-                    Joe Martinez, University of California, Berkeley
-                    John D.E. Gabrieli, Stanford University
-                    Mieke Verfaellie, Director, Memory Disorders Research Center, Boston University School of Medicine and Boston VA Healthcare System
-                    
-                    Program 4: The Responsive Brain
-                    
-                    Tiffany Field, Ph.D., Director, The Touch Research Institute, University of Miami School of Medicine (1989 interview: Director, “Infant Massage” Study)
-                    Saul Schanberg, Duke University
-                    Michael Meaney, McGill University
-                    Russell Fernald, Stanford University
-                    Robert Sapolsky, Stanford University
-                    
-                    Program 5: The Developing Child
-                    
-                    Renee Baillargeon, University of Illinois, Urbana-Champaign
-                    Judy DeLoache, University of Virginia (1989 interview: University of Illinois, Urbana-Champaign)
-                    Jerome Kagan, Harvard University
-                    Steven Suomi, National Institutes of Health
-                    
-                    Program 6: Language Development
-                    
-                    Noam Chomsky, Massachusetts Institute of Technology
-                    Jean Berko Gleason, Boston University
-                    Anne Fernald, Stanford University
-                    Dan Slobin, University of California, Berkeley
-                    
-                    Program 7: Sensation and Perception
-                    
-                    David H. Hubel, Harvard Medical School
-                    Misha Pavel, OGI, Oregon Health & Science University (1989 interview: Stanford University)
-                    
-                    Program 8: Learning (Updated)
-                    
-                    Robert Ader, University of Rochester Medical School
-                    Howard Rachlin, State University of New York at Stony Brook
-                    B.F. Skinner, deceased (1989 interview: Harvard University)
-                    
-                    Program 9: Remembering and Forgetting (Updated)
-                    
-                    Gordon Bower, Stanford University
-                    Richard Thompson, University of Southern California, Los Angeles
-                    Diana S. Woodruff-Pak, Albert Einstein Healthcare Network, Temple University
-                    
-                    Program 10: Cognitive Processesed
-                    
-                    Howard Gardner, Harvard University
-                    Herbert Simon, deceased (1989 interview: Carnegie-Mellon University)
-                    Michael Posner, University of Oregon
-                    Robert Glaser, Learning Research and Development Center at the University of Pittsburgh (L.R.D.C.), University of Pittsburgh</p>
-            </details>
-            <details>
-                <summary class="text-light">COPYRIGHT</summary>
-                <p class="text-light">Copyright © 2001 WGBH Educational Foundation CONDITIONS OF USE PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS SITE.
-
-                    By using this site, you signify your assent to these terms of use. If you do not agree to these terms of use, please do not use the site.
-                    
-                    RESTRICTIONS ON USE OF MATERIALS. This site is owned and operated by WGBH. No material from any Web site owned, operated, licensed or controlled by WGBH may be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in anyway, except that you may download one copy of the materials on any single computer for your personal, non-commercial home use only, provided you keep intact all copyright and other proprietary notices. Modification of the materials or use of the materials for any other purpose is a violation of WGBH’s copyright and other proprietary rights. For purposes of this Agreement, the use of any such material on any other Web site or networked computer environment is prohibited. All trademarks, service marks, and trade names are proprietary to WGBH Educational Foundation or Annenberg Media. All images appearing in this Web site are protected by copyright law. Use of any image without obtaining the required permission from the respective source is prohibited. Violations will be subject to legal action.</p>
-            </details>
+      </div>
+      <div class="col bg-dark">
+        <h2 class="title">About us</h2>
+        <details>
+          <summary class="text-light">SERIES OVERVIEW</summary>
+          <p class="text-light">
+            The Discovering Psychology telecourse and educational video series
+            first premiered in 1990 as a visual resource for teaching
+            introductory psychology. The 26 video programs review the history of
+            the field, including the work of early and contemporary theorists,
+            practitioners, and researchers, illustrating their work with footage
+            of classic experiments and modern studies. They tell the story of
+            psychology through demonstrations, classic experiments and
+            simulations, current research, documentary footage, and computer
+            animation all based on extensive investigation and superior
+            scholarship. The Updated Edition, released in 2001, highlights major
+            new developments in the field, and new areas of inquiry by
+            theleading researchers. In addition to the new and updated video
+            programs, Discovering Psychology: Updated Edition includesthis
+            interactive website providing video program extensions including
+            interviews with researchers, essays, and details onexperiments. In
+            addition, the site offers five interactive explorations of facets of
+            psychology including its history,research methods, the human brain,
+            human development, and approaches to treatment. The three new video
+            programs of theUpdated Edition are Applying Psychology in Life,
+            which explores the role of psychology: in law, conflict
+            negotiation,ergonomics, and space travel, and human performance;
+            Cognitive Neuroscience presenting new ideas in brain research and
+            theapplication of brain mapping technology, and Cultural Psychology
+            which probes a complex field integrating social andpersonality
+            psychology, anthropology and other social sciences. Complete program
+            titles are available on the site map. Discovering Psychology:
+            Updated Edition enables students, as well as general viewers, to
+            learn psychology’s history, observepsychology in practice, and
+            better understand its relevance to their own lives.
+          </p>
+        </details>
+        <details>
+          <summary class="text-light">SRIES AUDIENCE</summary>
+          <p class="text-light">
+            Discovering Psychology: Updated Edition may be used as a video
+            resource for classes, libraries, and media centers or as a
+            telecourse for distant learners.
+          </p>
+        </details>
+        <details>
+          <summary class="text-light">ABOUT THE HOST</summary>
+          <p class="text-light">
+            Philip G. Zimbardo, Professor of Psychology at Stanford University,
+            is an internationally acknowledged researcher, teacher, and author.
+            He has published more than two dozen text and trade books and more
+            than 200 professional articles on a wide range of topics in many
+            areas of animal and human behavior. Professor Zimbardo has received
+            numerous awards for his distinguished teaching, creative research,
+            dedicated social action, and career-long contributions to
+            psychology. He helped to create both the original Discovering
+            Psychology telecourse and the revision and update of this
+            influential learning experience. Professor Zimbardo has been
+            teaching introductory psychology for more than 40 years.
+          </p>
+        </details>
+        <details>
+          <summary class="text-light">SERIES PARTICIPANTS</summary>
+          <p class="text-light">
+            All interviews for Discovering Psychology, updated edition, are new
+            unless otherwise indicated. Program 1: Past, Present, and Promise
+            (Updated) Emanuel Donchin, University of South Florida, Tampa (1989
+            interview: University of Illinois, Urbana-Champaign) Robert
+            Rosenthal, University of California-Riverside (1989 interview:
+            Harvard University) Mahzarin R. Banaji, Harvard University Program
+            2: Understanding Research (Updated) Jerome D. Frank, The John
+            Hopkins University School of Medicine Daryl Bem, Cornell University
+            Christina Maslach, University of California, Berkeley Leonard Saxe,
+            Brandeis University (1989 interview: Boston University) Program 3:
+            The Behaving Brain (Updated) Roy E. John, Director, Brain Research
+            Lab, New York University School of Medicine Joe Martinez, University
+            of California, Berkeley John D.E. Gabrieli, Stanford University
+            Mieke Verfaellie, Director, Memory Disorders Research Center, Boston
+            University School of Medicine and Boston VA Healthcare System
+            Program 4: The Responsive Brain Tiffany Field, Ph.D., Director, The
+            Touch Research Institute, University of Miami School of Medicine
+            (1989 interview: Director, “Infant Massage” Study) Saul Schanberg,
+            Duke University Michael Meaney, McGill University Russell Fernald,
+            Stanford University Robert Sapolsky, Stanford University Program 5:
+            The Developing Child Renee Baillargeon, University of Illinois,
+            Urbana-Champaign Judy DeLoache, University of Virginia (1989
+            interview: University of Illinois, Urbana-Champaign) Jerome Kagan,
+            Harvard University Steven Suomi, National Institutes of Health
+            Program 6: Language Development Noam Chomsky, Massachusetts
+            Institute of Technology Jean Berko Gleason, Boston University Anne
+            Fernald, Stanford University Dan Slobin, University of California,
+            Berkeley Program 7: Sensation and Perception David H. Hubel, Harvard
+            Medical School Misha Pavel, OGI, Oregon Health & Science University
+            (1989 interview: Stanford University) Program 8: Learning (Updated)
+            Robert Ader, University of Rochester Medical School Howard Rachlin,
+            State University of New York at Stony Brook B.F. Skinner, deceased
+            (1989 interview: Harvard University) Program 9: Remembering and
+            Forgetting (Updated) Gordon Bower, Stanford University Richard
+            Thompson, University of Southern California, Los Angeles Diana S.
+            Woodruff-Pak, Albert Einstein Healthcare Network, Temple University
+            Program 10: Cognitive Processesed Howard Gardner, Harvard University
+            Herbert Simon, deceased (1989 interview: Carnegie-Mellon University)
+            Michael Posner, University of Oregon Robert Glaser, Learning
+            Research and Development Center at the University of Pittsburgh
+            (L.R.D.C.), University of Pittsburgh
+          </p>
+        </details>
+        <details>
+          <summary class="text-light">COPYRIGHT</summary>
+          <p class="text-light">
+            Copyright © 2001 WGBH Educational Foundation CONDITIONS OF USE
+            PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS SITE. By
+            using this site, you signify your assent to these terms of use. If
+            you do not agree to these terms of use, please do not use the site.
+            RESTRICTIONS ON USE OF MATERIALS. This site is owned and operated by
+            WGBH. No material from any Web site owned, operated, licensed or
+            controlled by WGBH may be copied, reproduced, republished, uploaded,
+            posted, transmitted, or distributed in anyway, except that you may
+            download one copy of the materials on any single computer for your
+            personal, non-commercial home use only, provided you keep intact all
+            copyright and other proprietary notices. Modification of the
+            materials or use of the materials for any other purpose is a
+            violation of WGBH’s copyright and other proprietary rights. For
+            purposes of this Agreement, the use of any such material on any
+            other Web site or networked computer environment is prohibited. All
+            trademarks, service marks, and trade names are proprietary to WGBH
+            Educational Foundation or Annenberg Media. All images appearing in
+            this Web site are protected by copyright law. Use of any image
+            without obtaining the required permission from the respective source
+            is prohibited. Violations will be subject to legal action.
+          </p>
+        </details>
+      </div>
+      <div class="col bg-dark">
+        <h2 class="title">Our Services</h2>
+        <h6>Depression Reasons</h6>
+        <h6>Health psychology</h6>
+        <h6>Social psychology</h6>
+        <h6>Cognitive psychology</h6>
+        <h6>Developmental psychology</h6>
+      </div>
+      <div class="col bg-dark">
+        <h2 class="title">Our Contact</h2>
+        <div class="contact-icon">
+          <i class="fa-solid fa-phone"></i><span>+8801879808105</span><br />
+          <i class="fa-solid fa-location-dot"></i
+          ><span> Agrabad | Halishar | Chattogram</span><br />
+          <i class="fa-solid fa-envelope"></i
+          ><span>samratakbar667466@gmail.com</span>
+          <form onsubmit="sendEmail(); reset(); return false;">
+          <input type="email" placeholder="Enter Your Email" id="email"><br>
+          <input type="text" placeholder="Type Your Message" id="message"><br>
+          <input class="btn btn-primary" type="submit" value="Send">
+          </form>
         </div>
-        <div class="col bg-dark">
-            <h2 class="title">Our Services</h2>
-            <h6>Depression Reasons</h6>
-            <h6>Health psychology</h6>
-            <h6>Social psychology</h6>
-            <h6>Cognitive psychology</h6>
-            <h6>Developmental psychology</h6>
-        </div>
-        <div class="col bg-dark">
-            <h2 class="title">Our Contact</h2>
-            <div class="contact-icon">
-                <i class="fa-solid fa-phone"></i><span>+8801879808105</span><br>
-                <i class="fa-solid fa-location-dot"></i><span> Agrabad | Halishar | Chattogram</span><br>
-                <i class="fa-solid fa-envelope"></i><span>samratakbar667466@gmail.com</span>
-                <input class="input" type="text"><span class="send-btn"> Send E-mail</span>
-            </div>
-        </div>
-        <p class="bg-dark text-light Copyright">Copyright © 2022 Mattter-of-Programming BD | All right reserved </p>
+      </div>
+      <p class="bg-dark text-light Copyright">
+        Copyright © 2022 Mattter-of-Programming BD | All right reserved
+      </p>
     </footer>
     <script src="main.js"></script>
     <script defer src="scroll.js"></script>
     <script src="colorThems.js"></script>
+    <script src="writePost.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"></script>
-</body>
+  </body>
 </html>

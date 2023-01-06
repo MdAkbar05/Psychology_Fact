@@ -8,7 +8,7 @@ themeBtn.forEach(color =>{
         let dataColor = color.getAttribute('data-color');
         let body = document.getElementById("main-body");
         let header =document.getElementById('header');
-        if(dataColor=='#e7e7e7'){
+        if(dataColor=='#ffffff'){
             document.querySelector(':root').style.setProperty('--text-color','black')
             header.style.backgroundColor = dataColor;
             body.style.backgroundColor = dataColor;
