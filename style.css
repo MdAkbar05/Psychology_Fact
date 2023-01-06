@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
-    transition: all 1s ease-in;
+    transition: all .7s ease-in;
 
 }
 
 
 .main-body{
-    background: whitesmoke;
+    background: rgb(255, 255, 255);
     width: fit-content;
     
 }
@@ -63,6 +63,11 @@
     border-bottom: 0.5px solid black;
 
 }
+
+
+/* Top Bar  */
+
+
 .header-area .topBar{
     width: 100%;
     height: 65px;
@@ -71,14 +76,14 @@
 .header-area .img_logo{
     width: 100px;
    
-    height: 100px;
+    height: 60px;
     float: left;
     overflow: hidden;
 }
 .header-area .img_logo img{
     width:65px;
     margin-left: 5px;
-    height: 60%;
+    height: 100%;
 }
 
 /* Page Title css  */
@@ -132,12 +137,10 @@
 
 /* Header menubar css  */
 .header-area .menuBar{
-    margin-left: 30%;
+    display: flex;
     position: relative;
-    width: 780px;
+    width: 100%;
     height: 50px;
-    right: 5px;
-    display: block;
 }
 
 
@@ -147,12 +150,12 @@
     transform: all 1s;
 }
 
-.header-area .menuBar .navBar .menu{
-    width: 155%;
-    height: 50px;
+.header-area .menuBar  .menu{
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
     display: flex;
-    
-    
+    justify-content: center;
 }
 /* Login Css  */
 .header-area .topBar .loginBtn{
@@ -165,11 +168,11 @@
 }
 .header-area .topBar  .login{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     padding: 2px;
     font-weight:600;
-    
+    padding:5px;
    
     border-radius: 7px;
     
@@ -177,7 +180,7 @@
 
 
 /* Login Css end  */
-.header-area .menuBar .navBar .menu .menu_li{
+.header-area .menuBar  .menu .menu_li{
     list-style: none;
     padding: 10px 10px;
     text-align: center;
@@ -185,17 +188,17 @@
     
 
 }
-.header-area .menuBar .navBar .menu .menu_li::before{
+.header-area .menuBar  .menu .menu_li::before{
     position: absolute;
     content: "";
-    top:35px ;
+    top:38px ;
     left: 50%;
     
-    background-color: rgb(0, 0, 0);
+    background-color: var(--text-color);
     opacity: 3;  
 }
 
-.header-area .menuBar .navBar .menu .menu_li:hover::before{
+.header-area .menuBar  .menu .menu_li:hover::before{
     transform: scaleX(20);
     transition: 0.5s;
     width: 5px;
@@ -204,7 +207,7 @@
 }
 
 
-.header-area .menuBar .navBar .menu .menu_li a{
+.header-area .menuBar  .menu .menu_li a{
     text-decoration: none;
     color: var(--text-color)    ;
     font-size: 20px;
@@ -212,35 +215,35 @@
     letter-spacing: 2px;
 }
 
-.header-area .menuBar .navBar .menu .menu_li a i{
+.header-area .menuBar  .menu .menu_li a i{
     font-size: 30px;
 }
 
 /* menu_li hover effect */
 
-.header-area .menuBar .navBar .menu .menu_li .subMenu{
+.header-area .menuBar  .menu .menu_li .subMenu{
     opacity: 0;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
     transition: all .4s;
     text-align: center;
-    padding: 10px;
+    padding: 20px 20px;
     padding-left:0;
     transform: translateY(-80px);
-    width: 100px;
+    width: 140px;
     box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 -webkit-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 -moz-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 }
 
-.header-area .menuBar .navBar .menu .menu_li .subMenu li{
+.header-area .menuBar  .menu .menu_li .subMenu li{
     position: relative;
     margin: 3px 0;
-    
+    padding-left: 10px;
     list-style: none;
     
 }
-.header-area .menuBar .navBar .menu .menu_li .subMenu li::before{
+.header-area .menuBar  .menu .menu_li .subMenu li::before{
     position: absolute;
     content: "";
     top:25px ;
@@ -251,19 +254,19 @@
     opacity: 0;
 }
 
-.header-area .menuBar .navBar .menu .menu_li .subMenu li:hover::before{
+.header-area .menuBar  .menu .menu_li .subMenu li:hover::before{
     transform: scaleX(32);
     transition: 0.8s;
     opacity: 3;
     background-color: rgb(255, 197, 38);;
 }
-.header-area .menuBar .navBar .menu .menu_li .subMenu li a{
+.header-area .menuBar  .menu .menu_li .subMenu li a{
     color: rgb(0, 0, 0);
     font-weight: 400;
     
 }
 
-.header-area .menuBar .navBar .menu .menu_li:hover .subMenu{
+.header-area .menuBar  .menu .menu_li:hover .subMenu{
    opacity: 3;
    transform: translateY(0);
     
@@ -272,18 +275,18 @@
 
 /* social media nav  */
 
-.header-area .menuBar .navBar .menu .social_link{
+.header-area .menuBar  .menu .social_link{
     margin-left: 100px;
     margin-top: 15px;
 
 }
-.header-area .menuBar .navBar .menu .social_link i{
+.header-area .menuBar  .menu .social_link i{
     font-size: 25px;
     padding: 0 7px;
     cursor: pointer;
     color: var(--text-color);
 }
-.header-area .menuBar .navBar .menu .social_link i:hover{
+.header-area .menuBar  .menu .social_link i:hover{
     color: rgb(24, 67, 255);
 }
 /* social media nav end */
@@ -291,27 +294,25 @@
 
 /* Color Switcher  */
 
-.header-area .menuBar .navBar .menu .colorSwitcher{
+.header-area .menuBar  .menu .colorSwitcher{
     position: relative;
-    
+    float: right;
     width: 200px;
     padding: 10px;
-   background: transparent;
+    background: transparent;
     top: 0;
-    right: -355px;     /*  185px defalut */
+    right: 0%;     /*  185px defalut */
     z-index: 100;
     transition: all .7s;
 }
 
-.header-area .menuBar .navBar .menu .colorSwitcher.active{
-    right: -175px;
-}
 
-.header-area .menuBar .navBar .menu .colorSwitcher .colorSwitcherBtn i:hover{
-    color: red;
+
+.header-area .menuBar  .menu .colorSwitcher .colorSwitcherBtn i:hover{
+    color: var(--text-color);
     transform: scale(1.5);
 }
-.header-area .menuBar .navBar .menu .colorSwitcher .colorSwitcherBtn i{
+.header-area .menuBar  .menu .colorSwitcher .colorSwitcherBtn i{
     animation: rotate 2s linear infinite;
 }
 
@@ -320,24 +321,28 @@
         transform: rotate(360deg);
     }
 }
-.header-area .menuBar .navBar .menu .colorSwitcher h4{
+.header-area .menuBar  .menu .colorSwitcher h4{
     color: rgb(0, 0, 0);
     margin-bottom: 0px;
     
     text-align: center;
 }
 
-.header-area .menuBar .navBar .menu .colorSwitcher .colorSwitcherBtn{
+.header-area .menuBar  .menu .colorSwitcher .colorSwitcherBtn{
     position: absolute;
-    top: 0;
-    left: -55px;
+    top: 0%;
+    right: 5%;
     padding: 5px 20px;
     font-size: 23px;
     cursor: pointer;
     background-color:transparent;
     color: var(--text-color);
 }
-.header-area .menuBar .navBar .menu .colorSwitcher .theme-btn-container{
+.header-area .menuBar  .menu .colorSwitcher .theme-btn-container{
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-500px);
+    right: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -347,7 +352,11 @@
 -webkit-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 -moz-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
 }
-.header-area .menuBar .navBar .menu .colorSwitcher .theme-btn-container .themeBtns{
+.header-area .menuBar  .menu .colorSwitcher .theme-btn-container.active{
+    transform: translateY(50px);
+
+}
+.header-area .menuBar  .menu .colorSwitcher .theme-btn-container .themeBtns{
     display: block;
     height: 50px;
     width: 50px;
@@ -378,19 +387,31 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 900px;
-    background: url(Source/img/interfce-bg\ .jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 950px;
+    position: relative;
+    background: linear-gradient(180deg, #2432ff 0%, #313fff 50%, #ffffff 100%);
     overflow: hidden;
 }
 
-
+.interface .img{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    width: 423px;
+    height: 290px;
+    overflow: hidden;
+    z-index: 100;
+}
+.interface .img img{
+    width: 100%;
+    height: 100%;
+}
 .interface .main-area{
     width: 600px;
     height: 450px;
     color: #fff;
     margin-left: 15%;
+    margin-top: 10%;
 }
 
 .main-area p{
