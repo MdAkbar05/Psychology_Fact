@@ -10,9 +10,17 @@
 
 
 .main-body{
-    background: rgb(255, 255, 255);
-    width: fit-content;
+    background: #fff;
     
+    
+}
+.preLoader{
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 255, 255) url(Source/preloader/Preloader.gif) no-repeat center center;
+    background-size: 10%;
+    position: fixed;
+    z-index: 5000;
 }
 
 /* root color  */
@@ -226,7 +234,7 @@
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
     transition: all .4s;
-    text-align: center;
+    text-align: left;
     padding: 20px 20px;
     padding-left:0;
     transform: translateY(-400px);
@@ -255,10 +263,10 @@
 }
 
 .header-area .menuBar  .menu .menu_li .subMenu li:hover::before{
-    transform: scaleX(32);
-    transition: 0.8s;
+    transform: scaleX(35);
+    transition: 0.3s;
     opacity: 3;
-    background-color: rgb(255, 197, 38);;
+    background-color: rgb(0, 0, 0);;
 }
 .header-area .menuBar  .menu .menu_li .subMenu li a{
     color: rgb(0, 0, 0);
@@ -459,7 +467,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-left: 15px;
 }
-
+.basic-psychology .row .col:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transform: scale(1.015);
+    border: 1px solid black;
+    transition: 0,2s;
+}
 .basic-psychology .row .col .card-heading{
     text-align: center;
     font-size: 25px;
@@ -494,88 +507,79 @@
 /* .psychologyType css  */
 
 
-.psychologyType{
-    margin: auto;
-    padding: 20px;
+.type-psychology{
+    margin-top: 230px;
     position: relative;
-
-}
-.psychologyType .typeTitle{
-    font-size: 35px;
-    color: var(--text-color);
-    text-align: center;
-    text-shadow: 0px 5px 20px rgb(255, 255, 255);
 }
 
-.psychologyType .heading{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-image: url(Source/img/Psy_Type_BG.jpg);
-    background-position: center;
-    background-size: cover;
-    justify-content: left;
-}
-
-.psychologyType .heading:hover{
-    transform: scale(1.05);
-}
-.psychologyType .heading h2{
-    position: absolute;
-    left: 10%;
-    top: 160px;
-    color: #fff;
-    text-shadow: 0px 5px 20px rgb(0, 0, 0);
-}
-.psychologyType .heading span{
-    position: absolute;
-    color: coral;
-    left: 32%;
-    top: 200px;
-    text-shadow: 0px 5px 20px rgb(0, 0, 0);
-}
-
-.psychologyType .typeArea{
-    margin-top: 50px;
-    
-}
-
-.psychologyType .typeArea .type-heading{
+.type-psychology .heading{
     text-align: center;
     font-size: 40px;
     color: var(--text-color);
 }
 
-.psychologyType .typeArea .col-12:hover{
-    transform: scale(1.005);
-    box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
--webkit-box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
--moz-box-shadow: 2px 2px 77px 11px rgba(0,0,0,0.58);
+.type-psychology .sub-heading{
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid;
 }
-
-.psychologyType .typeArea .col-12{
-    border: 0.001px solid rgb(104, 95, 95);
-    transition: 0.5s all;
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 50px;
+.type-psychology .details{
+    text-align: center;
     color: var(--text-color);
 }
-.psychologyType .typeArea .col-12 .title{
+
+/* basic-psychology card design */
+.type-psychology .row{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.type-psychology .row .col-12{
+    /* background-image: url(Source/img/psy-type-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */
+    box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
+-webkit-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
+-moz-box-shadow: 2px 2px 77px 1px rgba(255,219,219,0.75);
+   border: 0.5px solid rgb(104, 104, 104);
+    background-color: #fff;
+    margin-top: 80px;
+}
+.type-psychology .row .col-12:hover{
+    transition: 0.4;
+    box-shadow: blue 0px 0px 10px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.type-psychology .row .col .card-heading{
     text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.psychologyType .typeArea .col-12 span{
-    margin-left: 45%;
-    margin-top: 10px;
+.type-psychology .row .col .card-img{
+    height: 50%;
+    width: 60%;
+    position: relative;
+    padding: 5px;
+    margin: auto;
+}
+.type-psychology .row .col .card-img img{
+    width: 100%;
+    text-align: 100%;
 }
 
-.psychologyType .typeArea .col p .hide{
-    display: none;
+.type-psychology .row .col .card-details{
+    
+    padding: 10px 0;
 }
 
-
-
+.type-psychology .row .col .btn{
+   margin-left: 45%;
+   width: 200px;
+    
+}
 
 
 
@@ -715,38 +719,45 @@
 /* write post design  */
 
 .post{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    width: 450px;
+    margin-top: 100px;
+    box-shadow: rgba(164, 165, 165, 0.911) 0px 1px 2px 10px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: var(--text-color);
     position: relative;
-    margin-left: 40%;
     padding: 20px;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.post .postHeading{
-    font-size: 40px;
-    text-align: left;
+.post .mainPost{
+    width: 50%;
 }
 
-.post .image{
-    display: flex;
+.post .mainPost .postHeading{
+    font-size: 40px;
+    text-align: left;
+    text-align: center;
+    
 }
-.post .test{
+
+
+.post .mainPost .test{
     padding-left: 10px;
     padding-top: 5px;
+    
 }
-.post .btn{
+.post .mainPost .btn{
     margin-left: 10px;
     margin-top: 5px;
     
 }
 
-.post input[type=text]{
-    width: 250px;
+.post .mainPost input[type=text]{
+    width: 90%;
 }
 
-.post  .test .discrip{
-    width: 245px;
-    height: 100px;
+.post .mainPost  .test .discription {
+    
+    height: 200px;
 }
 
 /* section 2 css effect */
@@ -795,6 +806,7 @@
                 5px 5px 20px rgb(85, 84, 84);
     border-radius: 10px;
     height: 300px;
+    max-height: 600px;
     color: rgb(0, 0, 0);
     z-index: 100;
 
@@ -818,11 +830,11 @@
 }
 
 .section2 .blogArea .blog .blog-img img{
-    position: absolute;
-    height: 100%;
+    position: relative;
+    height: 70%;
     width: 60%;
     border-radius: 50%;
-    padding: 20px 0;
+    
 }
 
 

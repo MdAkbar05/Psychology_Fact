@@ -35,6 +35,8 @@
     />
   </head>
   <body class="main-body" id="main-body">
+    <!-- preloader  -->
+    <div class="preLoader" id="preLoader"></div>
     <!-- Main Header  -->
     <header class="header-area container-fluid text-white" id="header">
       <!-- Top Bar  -->
@@ -65,12 +67,12 @@
           <li class="menu_li">
             <a id="science" href="#catagory">Catagory</a>
             <ul class="subMenu">
-              <li><a href="#">Catagory-1</a></li>
-              <li><a href="#">Catagory-2</a></li>
-              <li><a href="#">Catagory-3</a></li>
-              <li><a href="#">Catagory-4</a></li>
-              <li><a href="#">Catagory-5</a></li>
-              <li><a href="#">Catagory-6</a></li>
+              <li><a href="#">Biopsychology</a></li>
+              <li><a href="#">Cognitive</a></li>
+              <li><a href="#">Social</a></li>
+              <li><a href="#">Forensic</a></li>
+              <li><a href="#">Abnormal</a></li>
+              <li><a href="#">Personality</a></li>
             </ul>
           </li>
           <li class="menu_li">
@@ -296,128 +298,139 @@
 
     </div>
 
-    <!-- Tpye OF Psychology -->
-    <div class="container psychologyType" id="catagory"><br><br><br><br>
-      <div class="typeTitle">Different type of Psychology</div>
-      <hr />
-      <div class="heading ">
-        <h2>The different types of psychology!</h2>
-        <br /><span>By Cooper Nelson</span>
-      </div>
-      <hr />
-      <div class="row typeArea">
-        <div class="type-heading">3 Psychology Type are very Familiar</div>
-        <div class="col-12 typeOne">
-          <img
-            src="Source/img/psychology_type/abnormalType.png"
-            alt="abnormal"
-            style="width: 100%; height: auto"
-          />
-          <h2 class="title">Abnormal Psychology</h2>
-          <p>
-            Abnormal psychology specializes in the study of behavioral
-            deviations. These include atypical behaviors, emotions and thoughts.
-            Abnormal psychology researchers seek to understand why these
-            deviations occur and how best to treat them. Psychologists focus on
-            such aspects of life as:
 
-            <li>Societal interactions</li>
-            <li>Role expectations</li>
-            <li>Interpersonal relationships</li>
-            Behavioral psychologists work in a variety of settings, such as:
-            <li>Hospitals</li>
-            <li>Universities</li>
-            <li>Private practices</li>
-            <li>Government agencies</li>
-            John Watson is generally considered the father of behavioral
-            psychology. Behaviorists emphasize how “stimuli,” or the
-            interactions between a subject and their environment, enforce or
-            punish certain behavior. Behavioral psychology has applications in
-            clinical psychology and research settings.
-          </p>
-          <br />
-          <span class="btn btn-primary">View Source</span>
+
+    <!-- Tpye OF Psychology -->
+
+    <div class="type-psychology container " id="catagory">
+      <div class="heading">Different type of Psychology</div>
+      <div class="sub-heading">3 Psychology Type are very Familiar</div>
+      <div class="details"><span>By Kendra Cherry </span>| <span>Updated on April 02, 2016</span></div>
+      <!-- Basic Card  -->
+      <div class="row">
+        <!-- first card  -->
+        <div class="col col-12">
+          <div class="card-heading">Abnormal Psychology</div>
+          <div class="row">
+            <div class="col">
+            
+              <div class="card-img">
+              <img src="Source/PNG/col_bg_1.png" alt="mind">
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card-details">Abnormal psychology specializes in the study of behavioral
+                deviations. These include atypical behaviors, emotions and thoughts.
+                Abnormal psychology researchers seek to understand why these
+                deviations occur and how best to treat them. Psychologists focus on
+                such aspects of life as:
+  
+                <li>Societal interactions</li>
+                <li>Role expectations</li>
+                <li>Interpersonal relationships</li>
+                Behavioral psychologists work in a variety of settings, such as:
+                <li>Hospitals</li>
+                <li>Universities</li>
+                <li>Private practices</li>
+                <li>Government agencies</li>
+                John Watson is generally considered the father of behavioral
+                psychology. Behaviorists emphasize how “stimuli,” or the
+                interactions between a subject and their environment, enforce or
+                punish certain behavior. Behavioral psychology has applications in
+                clinical psychology and research settings.</div>
+            </div>
+          </div>
+          <div class="btn btn-primary">View Source</div>
         </div>
-        <div class="col-12 typeOne">
-          <img
-            src="Source/img/psychology_type/behavior.png"
-            alt="abnormal"
-            style="width: 100%; height: auto"
-          />
-          <h2 class="title">Behavioral Psychology</h2>
-          <p>
-            Behavioral psychology focuses on studying observable behaviors.
-            Behavioral psychology researchers seek to understand why certain
-            behaviors occur and how best to change them. The main focus of
-            behavioral psychologists is to find ways to change problematic
-            behaviors through:
-            <li>Observation</li>
-            <li>Experimentation</li>
-            <li>Analysis</li>
-            Behavioral psychologists work in a variety of settings, such as:
-            <li>Hospitals</li>
-            <li>Universities</li>
-            <li>Private practices</li>
-            <li>Government agencies</li>
-            John Watson is generally considered the father of behavioral
-            psychology. Behaviorists emphasize how “stimuli,” or the
-            interactions between a subject and their environment, enforce or
-            punish certain behavior. Behavioral psychology has applications in
-            clinical psychology and research settings.
-          </p>
-          <br />
-          <span class="btn btn-primary">View Source</span>
+        <!-- second card -->
+        <div class="col col-12">
+          <div class="card-heading">Behavioral Psychology</div>
+          <div class="row">
+            <div class="col ">
+              <div class="card-details">Behavioral psychology focuses on studying observable behaviors.
+                Behavioral psychology researchers seek to understand why certain
+                behaviors occur and how best to change them. The main focus of
+                behavioral psychologists is to find ways to change problematic
+                behaviors through:
+                <li>Observation</li>
+                <li>Experimentation</li>
+                <li>Analysis</li>
+                Behavioral psychologists work in a variety of settings, such as:
+                <li>Hospitals</li>
+                <li>Universities</li>
+                <li>Private practices</li>
+                <li>Government agencies</li>
+                John Watson is generally considered the father of behavioral
+                psychology. Behaviorists emphasize how “stimuli,” or the
+                interactions between a subject and their environment, enforce or
+                punish certain behavior. Behavioral psychology has applications in
+                clinical psychology and research settings.</div>
+            </div>
+            <div class="col">
+            
+              <div class="card-img">
+              <img src="Source/PNG/col_bg_1.png" alt="mind">
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-primary">View Source</div>
         </div>
-        <div class="col-12 typeOne">
-          <img
-            src="Source/img/psychology_type/socialMedia.png"
-            alt="abnormal"
-            style="width: 100%; height: auto"
-          />
-          <h2 class="title">Social psychology</h2>
-          <p>
-            Social psychology studies how people interact with each other and
-            how they behave in groups. It focuses on the factors that influence
-            social behavior, such as:
-            <li>Attitudes</li>
-            <li>Beliefs</li>
-            <li>Emotions</li>
-            <li>Evaluations</li>
-            <li>Interpersonal relationships</li>
-            Social psychologists seek to understand and explain how people's
-            thoughts, feelings and actions are impacted by the actual, mental or
-            imagined presence of others. Social psychologists work in many
-            different settings, such as:
-            <li>Academic institutions</li>
-            <li>Businesses</li>
-            <li>Government agencies</li>
-            <li>Nonprofit organizations</li>
-            Social psychologists typically need a doctoral degree and a state
-            licensing credential to work in this field, particularly when their
-            duties intersect with clinical psychology. However, according to the
-            U.S. Bureau of Labor Statistics (BLS), jobs in social work generally
-            require a bachelor’s or master's degree.
-          </p>
-          <br />
-          <span class="btn btn-primary">View Source</span>
+
+        <!-- third card -->
+        <div class="col col-12">
+          <div class="card-heading">Social psychology</div>
+          <div class="row">
+            <div class="col">
+            
+              <div class="card-img">
+              <img src="Source/PNG/col_bg_1.png" alt="mind">
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card-details">Social psychology studies how people interact with each other and
+                how they behave in groups. It focuses on the factors that influence
+                social behavior, such as:
+                <li>Attitudes</li>
+                <li>Beliefs</li>
+                <li>Emotions</li>
+                <li>Evaluations</li>
+                <li>Interpersonal relationships</li>
+                Social psychologists seek to understand and explain how people's
+                thoughts, feelings and actions are impacted by the actual, mental or
+                imagined presence of others. Social psychologists work in many
+                different settings, such as:
+                <li>Academic institutions</li>
+                <li>Businesses</li>
+                <li>Government agencies</li>
+                <li>Nonprofit organizations</li>
+                Social psychologists typically need a doctoral degree and a state
+                licensing credential to work in this field, particularly when their
+                duties intersect with clinical psychology. However, according to the
+                U.S. Bureau of Labor Statistics (BLS), jobs in social work generally
+                require a bachelor’s or master's degree.</div>
+            </div>
+          </div>
+          <div class="btn btn-primary">View Source</div>
         </div>
-      </div>
-    </div>
+    </div> 
+  </div>  
     <!-- Tpye OF Psychology End -->
 
     <!-- write post design -->
-    <div class="post ">
-      <div class="postHeading">Write Your Amaizing Fact</div>
-      <div class="image test">Select Image :  <input type="file"></div>
-      <div class="blogTitle test">Blogs Title: <input type="text"></div>
-      <div class="discription test">Discription : <input class="discrip" type="text"> </div>
-      <input type="submit" class="btn btn-primary" value="Post">
+    <div class="post container">
+      <div class="mainPost">
+        <div class="postHeading">Write Your Amaizing Fact</div>
+      <div class="image test">Image Url <br><input id="choosenImgUrl" type="text"></div>
+      <div class="blogTitle test">Blogs Title: <input id="userBlogTitle" type="text"></div>
+      <div class="discription test">Discription : <input id="discription" type="text"> </div>
+      <input type="submit" class="btn btn-primary" id="submitBtn" value="Post">
+      </div>
     </div>
 
     <!-- Post design -->
     <div class="container section2">
       <div class="blogArea row">
-        <div class="col-sm-10">
+        <div class="col-sm-10 mainBlog">
           <div class="blog-title">
             <div class="spinner-grow text-primary"></div>
             ----Latest Amaizing Facts----

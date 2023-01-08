@@ -1,4 +1,20 @@
+// Preloader Effect  
+let preLoader = document.getElementById("preLoader");
+let header = document.getElementById("header").style.display ="none";
+// let interface = document.getElementById("interface").style.display ="none";
 
+// window.addEventListener("load", function(){
+//     preLoader.style.display = "none";
+// });
+
+// custom preLoader 
+
+setTimeout(() => {
+   
+   let header = document.getElementById("header").style.display ="block";
+      // interface.style.display = "block";
+      preLoader.style.display = "none";
+ }, "4000")
 
 // let readMore = document.getElementById("readBtn");
 
@@ -12,16 +28,3 @@
 // 
 
 
-function sendEmail(){
-   Email.send({
-      Host : "smtp.gmail.com",
-      Username : "mdakbarhossanam05@gmail.com",
-      Password : "I love my kolija",
-      To : 'samratakbar@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : "This New Contact from user",
-      Body : document.getElementById("message").value
-   }).then(
-    message => alert(message)
-   );
-}
