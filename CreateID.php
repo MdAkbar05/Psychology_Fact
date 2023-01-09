@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/15375f512b.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 cdn Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
             background: rgb(156, 156, 156);
@@ -19,7 +21,7 @@
 
         .login-area {
 
-
+            position: relative;
             width: 450px;
             height: 700px;
             background-color: rgb(196, 194, 194);
@@ -33,6 +35,8 @@
         }
 
         .login-area .logo {
+            position: relative;
+            margin-top: 20px;
             width: 100px;
             height: 100px;
             display: flex;
@@ -121,16 +125,16 @@
 <body>
     <?php
     if (isset($_POST['submit'])) {
-        $userName = $_POST['fullName'];
-        $userNumber = $_POST['number'];
+        $firstName = $_POST['firstName'];
+        $secondName = $_POST['secondName'];
         $userEmail = $_POST['userEmail'];
         $userPass = $_POST['userPass'];
-        if ($userEmail && $userPass && $userName && $userNumber) {
+        if ($userEmail && $userPass && $firstName && $secondName && $userEmail) {
             $connection = mysqli_connect("localhost", "root", "", "createaccount");
 
-            $query = "INSERT INTO newuser(userName,userNumber,userEmail,userPass) VALUES('$userName','$userNumber','$userEmail','$userPass')";
+            $query = "INSERT INTO newuser(firstName,secondName,userEmail,userPass) VALUES('$firstName','$secondName','$userEmail','$userPass')";
             $exportResult = mysqli_query($connection, $query);
-
+            header("location: loginHome.php");
 
         } else {
             echo "<h1>Please! Fill Your Feild!</h1>";
@@ -140,17 +144,18 @@
     }
     ?>
 
-    <form action="createID.php" method="post" class="login-area">
+    <form action="createID.php" method="POST" class="login-area">
         <div class="logo"><i class="fa-solid fa-right-to-bracket"></i></div>
         <div class="title">Sign In to Your Account</div>
-        <input type="text" name="fullName" placeholder="Enter Your Full Name" id="fullName"><br>
-        <input type="text" name="number" placeholder="Enter Your Number" id="number"><br>
-        <input type="text" name="userEmail" placeholder="Enter Your Email" id="loginEmail"><br>
-        <input type="password" name="userPass" placeholder="Enter a strong Password" id="loginPass"><br>
+        <input type="text" name="firstName" required placeholder="Enter Your First Name" id="fullName"><br>
+        <input type="text" name="secondName" required placeholder="Enter Your Last Number" id="number"><br>
+        <input type="text" name="userEmail" required placeholder="Enter Your Email" id="loginEmail"><br>
+        <input type="password" required name="userPass" placeholder="Enter a strong Password" id="loginPass"><br>
         <label for="checkbox">I accept terms of Service and Privacy Policy</label>
         <input type="checkbox" name="checkbox" required>
         <br>
         <input type="submit" value="Create Account" class="btn" name="submit"> <br>
+        <a href="loginHome.php">Have an account? <span class="text-primary">SignUp</span></a>
         <a href="index.html">Go back to Home</a>
 
     </form>

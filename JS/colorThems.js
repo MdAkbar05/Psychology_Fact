@@ -24,7 +24,21 @@ themeBtn.forEach(color =>{
             header.style.backgroundColor = dataColor;
             body.style.backgroundColor = dataColor;
         }
-        
+        if(dataColor=='#3d1e35'){
+            document.querySelector(':root').style.setProperty('--text-color','white')
+            header.style.backgroundColor = dataColor;
+            body.style.backgroundColor = dataColor;
+        }
+        if(dataColor=='#d9ff00'){
+            document.querySelector(':root').style.setProperty('--text-color','black')
+            header.style.backgroundColor = dataColor;
+            body.style.backgroundColor = dataColor;
+        }
+        if(dataColor=='#28faa9'){
+            document.querySelector(':root').style.setProperty('--text-color','black')
+            header.style.backgroundColor = dataColor;
+            body.style.backgroundColor = dataColor;
+        }
         
     });
 });

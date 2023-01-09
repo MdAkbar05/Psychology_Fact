@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/15375f512b.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 cdn Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
             background: rgb(156, 156, 156);
@@ -21,7 +23,7 @@
 
 
             width: 400px;
-            height: 500px;
+            height: 600px;
             background-color: rgb(196, 194, 194);
             box-shadow: -5px -5px 20px rgb(255, 255, 255),
                 5px 5px 20px rgb(85, 84, 84);
@@ -94,6 +96,7 @@
             justify-content: center;
             width: 300px;
             height: 40px;
+            margin-bottom: 20px;
             text-decoration: none;
             border: none;
             background-color: rgb(196, 194, 194);
@@ -107,6 +110,14 @@
         a:hover {
             background-color: rgb(0, 0, 0);
             color: #ffff;
+
+        }
+
+        .text-warning {
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            font-size: 30px;
         }
     </style>
 </head>
@@ -116,30 +127,31 @@
     if (isset($_POST['submit'])) {
         $userEmail = $_POST['userEmail'];
         $userPass = $_POST['userPass'];
-        if ($userEmail && $userPass) {
-            $connection = mysqli_connect("localhost", "root", "", "loginuser");
 
-            $query = "INSERT INTO userdb(userEmail,userPass) VALUES('$userEmail','$userPass')";
-            $exportResult = mysqli_query($connection, $query);
-
-            $query2 = "SELECT * FROM userdb";
-            $importResult = mysqli_query($connection, $importResult);
-            if (!$exportResult) {
-                die("<h1>You have a error!</h1>");
-
-            }
+        $connection = mysqli_connect("localhost", "root", "", "createaccount");
+        $sql = "SELECT * FROM newuser WHERE userEmail ='$userEmail' AND userPass = '$userPass'";
+        $query = $connection->query($sql);
+        if (mysqli_num_rows($query) > 0) {
+            header("Location: index.html");
         } else {
-            echo "<h1>Please! Fill Your Feild!</h1>";
+            if (empty($userEmail && $userPass)) {
+                echo '<span class="text-warning">Please Fill Up Your Feild</span>';
+            } else {
+                echo '<span class="text-warning">Your information is wrong!</span>';
+            }
+
         }
+
     }
     ?>
 
-    <form action="loginHome.php" method="post" class="login-area">
+    <form action="loginHome.php" method="POST" class="login-area">
         <div class="logo"><i class="fa-solid fa-right-to-bracket"></i></div>
         <div class="title">Login</div>
         <input type="text" name="userEmail" placeholder="Enter Your Email" id="loginEmail"><br>
         <input type="password" name="userPass" placeholder="Enter Your Password" id="loginPass"><br>
         <input type="submit" value="Login" class="btn" name="submit"> <br>
+        <a href="CreateID.php">Sign Up New Account</a>
         <a href="index.html">Go back to Home</a>
 
     </form>

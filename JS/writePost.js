@@ -36,7 +36,8 @@ const blogData = ()=>{
       <div class="short" id="highlight">
         ${blogDetails.value}
       </div>
-      <div class="btn btn-outline-success">
+    </div>
+    <div class="btn btn-outline-success">
         <i
           class="fa-regular fa-thumbs-up"
           style="font-size: 25px"
@@ -50,7 +51,6 @@ const blogData = ()=>{
         id="readBtn">
         Read More
       </button>
-    </div>
   </div>
     `;
     blogElement.appendChild(blogPost);
